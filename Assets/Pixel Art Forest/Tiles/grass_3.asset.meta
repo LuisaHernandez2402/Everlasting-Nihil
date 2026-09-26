@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: abef4625bc341ed42b1d4de074227e40
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 80909
+  packageName: Pixel Art Forest
+  packageVersion: 2.3
+  assetPath: Assets/Pixel Art Forest/Tiles/grass_3.asset
+  uploadId: 333870
