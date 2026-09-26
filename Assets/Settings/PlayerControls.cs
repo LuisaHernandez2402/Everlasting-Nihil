@@ -131,6 +131,16 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""Awaken"",
+                    ""type"": ""Button"",
+                    ""id"": ""824170e0-3a4b-4e2d-9f89-c4271c09ba9f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -320,6 +330,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Parry"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d0954ea9-074b-46bb-a0db-80f2f6deb260"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Awaken"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c2657838-7481-484b-b137-138250fccc89"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Awaken"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -332,6 +364,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_Parry = m_Player.FindAction("Parry", throwIfNotFound: true);
+        m_Player_Awaken = m_Player.FindAction("Awaken", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -416,6 +449,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Dash;
     private readonly InputAction m_Player_Parry;
+    private readonly InputAction m_Player_Awaken;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -443,6 +477,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Parry".
         /// </summary>
         public InputAction @Parry => m_Wrapper.m_Player_Parry;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Awaken".
+        /// </summary>
+        public InputAction @Awaken => m_Wrapper.m_Player_Awaken;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -481,6 +519,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Parry.started += instance.OnParry;
             @Parry.performed += instance.OnParry;
             @Parry.canceled += instance.OnParry;
+            @Awaken.started += instance.OnAwaken;
+            @Awaken.performed += instance.OnAwaken;
+            @Awaken.canceled += instance.OnAwaken;
         }
 
         /// <summary>
@@ -504,6 +545,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Parry.started -= instance.OnParry;
             @Parry.performed -= instance.OnParry;
             @Parry.canceled -= instance.OnParry;
+            @Awaken.started -= instance.OnAwaken;
+            @Awaken.performed -= instance.OnAwaken;
+            @Awaken.canceled -= instance.OnAwaken;
         }
 
         /// <summary>
@@ -572,5 +616,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnParry(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Awaken" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAwaken(InputAction.CallbackContext context);
     }
 }

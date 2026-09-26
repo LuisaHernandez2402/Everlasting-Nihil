@@ -27,6 +27,8 @@ namespace EverlastingNihil
 
         public event Action ParryPressed;
 
+        public event Action AwakenPressed;
+
         #endregion
 
 
@@ -64,6 +66,9 @@ namespace EverlastingNihil
 
             //PARRY
             controls.Player.Parry.started += OnParryStarted;
+
+            //AWAKEN
+            controls.Player.Awaken.started += OnAwakenStarted;
         }
 
 
@@ -83,6 +88,8 @@ namespace EverlastingNihil
             controls.Player.Disable();
 
             controls.Player.Parry.started -= OnParryStarted;
+
+            controls.Player.Awaken.started -= OnAwakenStarted;
         }
 
         #endregion
@@ -92,6 +99,15 @@ namespace EverlastingNihil
         private void OnParryStarted(InputAction.CallbackContext context)
         {
             ParryPressed?.Invoke();
+        }
+
+        #endregion
+
+        #region Awaken Input
+
+        private void OnAwakenStarted(InputAction.CallbackContext context)
+        {
+            AwakenPressed?.Invoke();
         }
 
         #endregion
