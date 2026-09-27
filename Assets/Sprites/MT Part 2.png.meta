@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 89f7c42204e7c6142b7f12f830cd36f0
+guid: 49132c16122c5144ea1524d310e4b551
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6271400113240013391
-    second: Cauldron Guy_0
+      213: -1156465553743349577
+    second: Spawn Sheet 32-36_0
   - first:
-      213: -8605829598530858914
-    second: Cauldron Guy_1
+      213: 9018427015654607013
+    second: Spawn Sheet 32-36_1
   - first:
-      213: -6835121160180584138
-    second: Cauldron Guy_2
+      213: 1401573674898421121
+    second: Spawn Sheet 32-36_2
   - first:
-      213: 195128792582213586
-    second: Cauldron Guy_3
+      213: -2901938169887002773
+    second: Spawn Sheet 32-36_3
+  - first:
+      213: 7322197866726000548
+    second: Spawn Sheet 32-36_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2
+  spritePixelsToUnits: 0.55
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +84,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -109,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cauldron Guy_0
+      name: Spawn Sheet 32-36_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 20
-        width: 104
-        height: 99
+        x: 0
+        y: 1673
+        width: 439
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4af30afc2d780750800000000000000
-      internalID: 6271400113240013391
+      spriteID: 7b8f622c4b863ffe0800000000000000
+      internalID: -1156465553743349577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cauldron Guy_1
+      name: Spawn Sheet 32-36_1
       rect:
         serializedVersion: 2
-        x: 198
-        y: 20
-        width: 104
-        height: 99
+        x: 439
+        y: 1204
+        width: 867
+        height: 844
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5096066393f19880800000000000000
-      internalID: -8605829598530858914
+      spriteID: 5a801ecc693e72d70800000000000000
+      internalID: 9018427015654607013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cauldron Guy_2
+      name: Spawn Sheet 32-36_2
       rect:
         serializedVersion: 2
-        x: 346
-        y: 19
-        width: 102
-        height: 97
+        x: 1280
+        y: 1218
+        width: 576
+        height: 539
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6313ea2d485c421a0800000000000000
-      internalID: -6835121160180584138
+      spriteID: 185fbdad4d3637310800000000000000
+      internalID: 1401573674898421121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cauldron Guy_3
+      name: Spawn Sheet 32-36_3
       rect:
         serializedVersion: 2
-        x: 492
-        y: 20
-        width: 104
-        height: 99
+        x: 0
+        y: 260
+        width: 852
+        height: 958
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +193,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2df405f5a9c35b200800000000000000
-      internalID: 195128792582213586
+      spriteID: b6fecbf0c9e3ab7d0800000000000000
+      internalID: -2901938169887002773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn Sheet 32-36_4
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 554
+        width: 451
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a783554a2cad9560800000000000000
+      internalID: 7322197866726000548
       vertices: []
       indices: 
       edges: []
@@ -210,10 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cauldron Guy_0: 6271400113240013391
-      Cauldron Guy_1: -8605829598530858914
-      Cauldron Guy_2: -6835121160180584138
-      Cauldron Guy_3: 195128792582213586
+      Spawn Sheet 32-36_0: -1156465553743349577
+      Spawn Sheet 32-36_1: 9018427015654607013
+      Spawn Sheet 32-36_2: 1401573674898421121
+      Spawn Sheet 32-36_3: -2901938169887002773
+      Spawn Sheet 32-36_4: 7322197866726000548
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

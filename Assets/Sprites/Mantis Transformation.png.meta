@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 35ebd87ffabc162489991d6b7fed1233
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4905071324264252013
+    second: Mantis Transformation_0
+  - first:
+      213: 8037203526268198238
+    second: Mantis Transformation_1
+  - first:
+      213: 8398745516805588509
+    second: Mantis Transformation_2
+  - first:
+      213: -4835111587626186100
+    second: Mantis Transformation_3
+  - first:
+      213: 8585233022286485845
+    second: Mantis Transformation_4
+  - first:
+      213: -8887111800665764072
+    second: Mantis Transformation_5
+  - first:
+      213: 8123900966635102341
+    second: Mantis Transformation_6
+  - first:
+      213: 5560566071516091382
+    second: Mantis Transformation_7
+  - first:
+      213: 2558118633815737653
+    second: Mantis Transformation_8
+  - first:
+      213: 4222906852178568443
+    second: Mantis Transformation_9
+  - first:
+      213: 6748496758475592728
+    second: Mantis Transformation_10
+  - first:
+      213: 5114282589361191493
+    second: Mantis Transformation_11
+  - first:
+      213: 5471584714899065233
+    second: Mantis Transformation_12
+  - first:
+      213: 1067776216453119513
+    second: Mantis Transformation_13
+  - first:
+      213: 4414216756783566363
+    second: Mantis Transformation_14
+  - first:
+      213: 729643357209595668
+    second: Mantis Transformation_15
+  - first:
+      213: 4609096814460049988
+    second: Mantis Transformation_16
+  - first:
+      213: 4726704592319768273
+    second: Mantis Transformation_17
+  - first:
+      213: -8941995510592347752
+    second: Mantis Transformation_18
+  - first:
+      213: -6235552588433098439
+    second: Mantis Transformation_19
+  - first:
+      213: -243439428224005797
+    second: Mantis Transformation_20
+  - first:
+      213: -4767984157663742244
+    second: Mantis Transformation_21
+  - first:
+      213: 1597267054753584104
+    second: Mantis Transformation_22
+  - first:
+      213: 7458887344034192902
+    second: Mantis Transformation_23
+  - first:
+      213: 1961860070825067970
+    second: Mantis Transformation_24
+  - first:
+      213: 3178905145514034455
+    second: Mantis Transformation_25
+  - first:
+      213: -135892814508513050
+    second: Mantis Transformation_26
+  - first:
+      213: 936617225245972095
+    second: Mantis Transformation_27
+  - first:
+      213: 8778983118477104426
+    second: Mantis Transformation_28
+  - first:
+      213: -5209832900425824619
+    second: Mantis Transformation_29
+  - first:
+      213: -2699597957955350250
+    second: Mantis Transformation_30
+  - first:
+      213: 7292261936824092116
+    second: Mantis Transformation_31
+  - first:
+      213: 7752634288483549047
+    second: Mantis Transformation_32
+  - first:
+      213: 6288837943361769043
+    second: Mantis Transformation_33
+  - first:
+      213: -6986439821366089955
+    second: Mantis Transformation_34
+  - first:
+      213: -6892903579389768063
+    second: Mantis Transformation_35
+  - first:
+      213: -6485009904859433507
+    second: Mantis Transformation_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 0.55
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mantis Transformation_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1797
+        width: 259
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d36476e9fadebb0800000000000000
+      internalID: -4905071324264252013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1790
+        width: 264
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d9bb23602e98f60800000000000000
+      internalID: 8037203526268198238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_2
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1783
+        width: 264
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d160a109c865e8470800000000000000
+      internalID: 8398745516805588509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_3
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1790
+        width: 264
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a8a2ae0ab36ecb0800000000000000
+      internalID: -4835111587626186100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_4
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1797
+        width: 264
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559d65f72ffd42770800000000000000
+      internalID: 8585233022286485845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_5
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1797
+        width: 264
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f822a37e2aaa480800000000000000
+      internalID: -8887111800665764072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_6
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 1790
+        width: 276
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580ecba03e4edb070800000000000000
+      internalID: 8123900966635102341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1517
+        width: 259
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f35ec281691b2d40800000000000000
+      internalID: 5560566071516091382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_8
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1524
+        width: 264
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53505ed0853408320800000000000000
+      internalID: 2558118633815737653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_9
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1531
+        width: 276
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4aaab7867ca9a30800000000000000
+      internalID: 4222906852178568443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_10
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1645
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81410d8fb0a77ad50800000000000000
+      internalID: 6748496758475592728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_11
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1531
+        width: 271
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ab6db1be499f640800000000000000
+      internalID: 5114282589361191493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_12
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1599
+        width: 29
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199040afe49feeb40800000000000000
+      internalID: 5471584714899065233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_13
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 1640
+        width: 73
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e7c41cfc081de00800000000000000
+      internalID: 1067776216453119513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_14
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1531
+        width: 273
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e49a5b0c2724d30800000000000000
+      internalID: 4414216756783566363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_15
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1592
+        width: 29
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f833f74c6302a00800000000000000
+      internalID: 729643357209595668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_16
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1531
+        width: 318
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a9649f12dc6ff30800000000000000
+      internalID: 4609096814460049988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_17
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1597
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d66d6798c0a89140800000000000000
+      internalID: 4726704592319768273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_18
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 1597
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8916108b576a7e380800000000000000
+      internalID: -8941995510592347752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1265
+        width: 329
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9397d2c45fdd679a0800000000000000
+      internalID: -6235552588433098439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_20
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1263
+        width: 328
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59426c31212f9cf0800000000000000
+      internalID: -243439428224005797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_21
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1253
+        width: 327
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd633c3aba7b4ddb0800000000000000
+      internalID: -4767984157663742244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_22
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1253
+        width: 366
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e395027ce1aa2610800000000000000
+      internalID: 1597267054753584104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_23
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1250
+        width: 366
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e90d0458a438760800000000000000
+      internalID: 7458887344034192902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 974
+        width: 366
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c50d8c075de93b10800000000000000
+      internalID: 1961860070825067970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_25
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 970
+        width: 366
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7158605236dbd1c20800000000000000
+      internalID: 3178905145514034455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_26
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 970
+        width: 366
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e821b784363d1ef0800000000000000
+      internalID: -135892814508513050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_27
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 970
+        width: 366
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f765c4967688ffc00800000000000000
+      internalID: 936617225245972095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_28
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 952
+        width: 434
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a259af912a635d970800000000000000
+      internalID: 8778983118477104426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_29
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 642
+        width: 434
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596c9f67494f2b7b0800000000000000
+      internalID: -5209832900425824619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_30
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 642
+        width: 434
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61193b7d5f9198ad0800000000000000
+      internalID: -2699597957955350250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_31
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 642
+        width: 434
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d580817891533560800000000000000
+      internalID: 7292261936824092116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_32
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 644
+        width: 434
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f33966fc3e69b60800000000000000
+      internalID: 7752634288483549047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 332
+        width: 434
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e83103ac0764750800000000000000
+      internalID: 6288837943361769043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_34
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 332
+        width: 434
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17a4da8ffd2b0f90800000000000000
+      internalID: -6986439821366089955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_35
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 317
+        width: 434
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e4477f6bc7750a0800000000000000
+      internalID: -6892903579389768063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Transformation_36
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 317
+        width: 434
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5b6ffb9dd9006a0800000000000000
+      internalID: -6485009904859433507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mantis Transformation_0: -4905071324264252013
+      Mantis Transformation_1: 8037203526268198238
+      Mantis Transformation_10: 6748496758475592728
+      Mantis Transformation_11: 5114282589361191493
+      Mantis Transformation_12: 5471584714899065233
+      Mantis Transformation_13: 1067776216453119513
+      Mantis Transformation_14: 4414216756783566363
+      Mantis Transformation_15: 729643357209595668
+      Mantis Transformation_16: 4609096814460049988
+      Mantis Transformation_17: 4726704592319768273
+      Mantis Transformation_18: -8941995510592347752
+      Mantis Transformation_19: -6235552588433098439
+      Mantis Transformation_2: 8398745516805588509
+      Mantis Transformation_20: -243439428224005797
+      Mantis Transformation_21: -4767984157663742244
+      Mantis Transformation_22: 1597267054753584104
+      Mantis Transformation_23: 7458887344034192902
+      Mantis Transformation_24: 1961860070825067970
+      Mantis Transformation_25: 3178905145514034455
+      Mantis Transformation_26: -135892814508513050
+      Mantis Transformation_27: 936617225245972095
+      Mantis Transformation_28: 8778983118477104426
+      Mantis Transformation_29: -5209832900425824619
+      Mantis Transformation_3: -4835111587626186100
+      Mantis Transformation_30: -2699597957955350250
+      Mantis Transformation_31: 7292261936824092116
+      Mantis Transformation_32: 7752634288483549047
+      Mantis Transformation_33: 6288837943361769043
+      Mantis Transformation_34: -6986439821366089955
+      Mantis Transformation_35: -6892903579389768063
+      Mantis Transformation_36: -6485009904859433507
+      Mantis Transformation_4: 8585233022286485845
+      Mantis Transformation_5: -8887111800665764072
+      Mantis Transformation_6: 8123900966635102341
+      Mantis Transformation_7: 5560566071516091382
+      Mantis Transformation_8: 2558118633815737653
+      Mantis Transformation_9: 4222906852178568443
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

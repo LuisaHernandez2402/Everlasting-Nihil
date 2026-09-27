@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 89f7c42204e7c6142b7f12f830cd36f0
+guid: d0cb32e7c93ace74e81f23f7d35906e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6271400113240013391
-    second: Cauldron Guy_0
+      213: -4552650687887196595
+    second: Mantis Idle_0
   - first:
-      213: -8605829598530858914
-    second: Cauldron Guy_1
+      213: -78008036986217673
+    second: Mantis Idle_1
   - first:
-      213: -6835121160180584138
-    second: Cauldron Guy_2
+      213: -6706852019420997456
+    second: Mantis Idle_2
   - first:
-      213: 195128792582213586
-    second: Cauldron Guy_3
+      213: -7113947293887833020
+    second: Mantis Idle_3
+  - first:
+      213: 6345981338810678725
+    second: Mantis Idle_4
+  - first:
+      213: 5566420793327253677
+    second: Mantis Idle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +87,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -109,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cauldron Guy_0
+      name: Mantis Idle_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 20
-        width: 104
-        height: 99
+        x: 12
+        y: 1221
+        width: 817
+        height: 588
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4af30afc2d780750800000000000000
-      internalID: 6271400113240013391
+      spriteID: d4ebb02025cb1d0c0800000000000000
+      internalID: -4552650687887196595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cauldron Guy_1
+      name: Mantis Idle_1
       rect:
         serializedVersion: 2
-        x: 198
-        y: 20
-        width: 104
-        height: 99
+        x: 933
+        y: 1197
+        width: 820
+        height: 599
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5096066393f19880800000000000000
-      internalID: -8605829598530858914
+      spriteID: 73b9fc98a1cdaeef0800000000000000
+      internalID: -78008036986217673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cauldron Guy_2
+      name: Mantis Idle_2
       rect:
         serializedVersion: 2
-        x: 346
-        y: 19
-        width: 102
-        height: 97
+        x: 3
+        y: 593
+        width: 817
+        height: 587
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6313ea2d485c421a0800000000000000
-      internalID: -6835121160180584138
+      spriteID: 0b8dc4d6f997ce2a0800000000000000
+      internalID: -6706852019420997456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cauldron Guy_3
+      name: Mantis Idle_3
       rect:
         serializedVersion: 2
-        x: 492
-        y: 20
-        width: 104
-        height: 99
+        x: 923
+        y: 618
+        width: 816
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +196,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2df405f5a9c35b200800000000000000
-      internalID: 195128792582213586
+      spriteID: 44cd6f4a0ae264d90800000000000000
+      internalID: -7113947293887833020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Idle_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 18
+        width: 818
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd711bb764711850800000000000000
+      internalID: 6345981338810678725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mantis Idle_5
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 0
+        width: 815
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da87e982836ef3d40800000000000000
+      internalID: 5566420793327253677
       vertices: []
       indices: 
       edges: []
@@ -210,10 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cauldron Guy_0: 6271400113240013391
-      Cauldron Guy_1: -8605829598530858914
-      Cauldron Guy_2: -6835121160180584138
-      Cauldron Guy_3: 195128792582213586
+      Mantis Idle_0: -4552650687887196595
+      Mantis Idle_1: -78008036986217673
+      Mantis Idle_2: -6706852019420997456
+      Mantis Idle_3: -7113947293887833020
+      Mantis Idle_4: 6345981338810678725
+      Mantis Idle_5: 5566420793327253677
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
