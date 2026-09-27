@@ -3,34 +3,35 @@ using UnityEngine;
 namespace EverlastingNihil
 {
     /// <summary>
-    /// Controls the Player's Sever ability.
+    /// Handles the Player's Sever ability.
     ///
-    /// Sever searches for the nearest linked
-    /// ResonanceNode and breaks its connection.
+    /// Sever finds the closest linked ResonanceNode
+    /// and destroys its active connection.
     ///
-    /// The actual connection logic belongs to
-    /// ResonanceNode.
+    /// The Player must own the Sever Crystal
+    /// before this ability can be used.
+    ///
+    /// No Update() is required.
     /// </summary>
     [RequireComponent(typeof(PlayerInputHandler))]
+    [RequireComponent(typeof(PlayerAbilityManager))]
     public class PlayerSever : MonoBehaviour
     {
         #region Sever Settings
 
         [Header("Sever Settings")]
 
-        // Point used as the center of our
-        // Sever detection radius.
+        // Center point used to search
+        // for linked ResonanceNodes.
         [SerializeField] private Transform severPoint;
 
-        // Maximum distance at which the Player
-        // can Sever a resonance connection.
+        // Maximum range of the Sever ability.
         [SerializeField] private float severRadius = 2f;
 
-        // Shared layer containing objects that
-        // abilities can interact with.
+        // Determines which layers Sever
+        // is allowed to target.
         //
-        // Use the same AbilityTarget layer
-        // as Awaken and Resonate.
+        // Set this to AbilityTarget.
         [SerializeField] private LayerMask abilityTargetLayer;
 
         #endregion
@@ -38,8 +39,12 @@ namespace EverlastingNihil
 
         #region Components
 
-        // Player's central input handler.
-        private PlayerInputHandler input;
+        // Handles Player input events.
+        private PlayerInputHandler inputHandler;
+
+        // Determines whether Sever
+        // has been unlocked.
+        private PlayerAbilityManager abilityManager;
 
         #endregion
 
@@ -48,26 +53,35 @@ namespace EverlastingNihil
 
         private void Awake()
         {
-            // Get the Player's input handler.
-            input =
+            // Cache our input handler.
+            inputHandler =
                 GetComponent<PlayerInputHandler>();
+
+            // Cache our ability progression manager.
+            abilityManager =
+                GetComponent<PlayerAbilityManager>();
         }
 
 
         private void OnEnable()
         {
-            // Listen for Sever input.
-            input.SeverPressed +=
-                HandleSeverPressed;
+            // Subscribe to the Sever input event.
+            if (inputHandler != null)
+            {
+                inputHandler.SeverPressed +=
+                    HandleSeverPressed;
+            }
         }
 
 
         private void OnDisable()
         {
-            // Stop listening when this component
-            // becomes disabled.
-            input.SeverPressed -=
-                HandleSeverPressed;
+            // Remove our input subscription.
+            if (inputHandler != null)
+            {
+                inputHandler.SeverPressed -=
+                    HandleSeverPressed;
+            }
         }
 
         #endregion
@@ -76,30 +90,62 @@ namespace EverlastingNihil
         #region Sever Input
 
         /// <summary>
-        /// Called whenever the Player presses
-        /// the Sever button.
+        /// Called when the Player presses
+        /// the Sever input.
         /// </summary>
         private void HandleSeverPressed()
         {
-            // Find the closest linked resonance node.
-            ResonanceNode node =
-                FindClosestLinkedNode();
+            // -----------------------------
+            // ABILITY UNLOCK CHECK
+            // -----------------------------
 
-
-            // If there isn't a linked node nearby,
-            // Sever has nothing to affect.
-            if (node == null)
+            // Sever cannot be used until
+            // its crystal has been collected.
+            if (abilityManager == null ||
+                !abilityManager.CanSever)
             {
                 Debug.Log(
-                    "No resonance connection nearby to sever."
+                    "Sever is locked. " +
+                    "Find the Sever Crystal first."
                 );
 
                 return;
             }
 
 
-            // Tell the node to intentionally
-            // sever its connection.
+            // -----------------------------
+            // SEVER POINT CHECK
+            // -----------------------------
+
+            // Stop safely if SeverPoint
+            // wasn't assigned.
+            if (severPoint == null)
+            {
+                Debug.LogWarning(
+                    "PlayerSever has no SeverPoint assigned."
+                );
+
+                return;
+            }
+
+
+            // Find the closest linked node.
+            ResonanceNode node =
+                FindClosestLinkedNode();
+
+
+            // Nothing nearby can currently be severed.
+            if (node == null)
+            {
+                Debug.Log(
+                    "No linked ResonanceNode is within Sever range."
+                );
+
+                return;
+            }
+
+
+            // Break the connection.
             node.Sever();
         }
 
@@ -109,25 +155,16 @@ namespace EverlastingNihil
         #region Node Detection
 
         /// <summary>
-        /// Finds the closest LINKED ResonanceNode
-        /// inside the Sever radius.
+        /// Finds the closest ResonanceNode that
+        /// currently has an active connection.
         /// </summary>
         private ResonanceNode FindClosestLinkedNode()
         {
-            // Use severPoint when assigned.
-            //
-            // Otherwise fall back to the Player's position.
-            Vector2 searchPosition =
-                severPoint != null
-                    ? severPoint.position
-                    : transform.position;
-
-
             // Find all AbilityTarget colliders
-            // inside the Sever radius.
-            Collider2D[] hits =
+            // within Sever's range.
+            Collider2D[] targets =
                 Physics2D.OverlapCircleAll(
-                    searchPosition,
+                    severPoint.position,
                     severRadius,
                     abilityTargetLayer
                 );
@@ -136,74 +173,75 @@ namespace EverlastingNihil
             // Store the closest valid node.
             ResonanceNode closestNode = null;
 
-
-            // Begin with an infinitely large distance.
+            // Begin with an infinitely
+            // large comparison distance.
             float closestDistance =
                 Mathf.Infinity;
 
 
-            // Check every collider found.
-            foreach (Collider2D hit in hits)
+            // Check each detected object.
+            foreach (Collider2D target in targets)
             {
-                // Search this object and its parents
-                // for a ResonanceNode.
+                // Try to find a ResonanceNode.
                 ResonanceNode node =
-                    hit.GetComponentInParent<ResonanceNode>();
+                    target.GetComponent<ResonanceNode>();
 
 
-                // Ignore anything that isn't
-                // a ResonanceNode.
+                // Ignore objects without a node.
                 if (node == null)
                     continue;
 
 
-                // Sever should only target nodes that
-                // currently have a connection.
+                // Sever only works on nodes
+                // that currently have a connection.
                 if (!node.IsLinked)
                     continue;
 
 
-                // Measure the distance to this node.
+                // Calculate distance to this node.
                 float distance =
                     Vector2.Distance(
-                        searchPosition,
+                        severPoint.position,
                         node.transform.position
                     );
 
 
-                // Keep whichever linked node
-                // is closest to the Player.
-                if (distance < closestDistance)
-                {
-                    closestDistance = distance;
-                    closestNode = node;
-                }
+                // Ignore it if another valid node
+                // is already closer.
+                if (distance >= closestDistance)
+                    continue;
+
+
+                // Store our new closest node.
+                closestDistance = distance;
+
+                closestNode = node;
             }
 
 
-            // Return the closest linked node found.
             return closestNode;
         }
 
         #endregion
 
 
-        #region Debug Visualization
+        #region Editor Visualization
 
+        /// <summary>
+        /// Shows Sever's detection radius
+        /// inside the Scene view.
+        /// </summary>
         private void OnDrawGizmosSelected()
         {
-            // Determine where the Sever radius
-            // should be displayed.
-            Vector3 searchPosition =
-                severPoint != null
-                    ? severPoint.position
-                    : transform.position;
+            // We cannot draw the radius without
+            // a SeverPoint.
+            if (severPoint == null)
+                return;
 
 
-            // Draw the Sever range while the
-            // Player is selected in the Scene view.
+            // Draw Sever's range.
             Gizmos.DrawWireSphere(
-                searchPosition,
+                severPoint.position,
                 severRadius
             );
         }

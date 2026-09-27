@@ -3,38 +3,37 @@ using UnityEngine;
 namespace EverlastingNihil
 {
     /// <summary>
-    /// Controls the Player's Resonate ability.
+    /// Handles the Player's Resonate ability.
     ///
-    /// Resonate uses two selections:
+    /// Resonate allows the Player to select two
+    /// ResonanceNodes and create a connection
+    /// between them.
     ///
-    /// First press:
-    ///     Select Node A.
+    /// The Player must own the Resonate Crystal
+    /// before this ability can be used.
     ///
-    /// Second press:
-    ///     Select Node B.
-    ///
-    /// Result:
-    ///     Node A and Node B become connected.
+    /// No Update() is required.
     /// </summary>
     [RequireComponent(typeof(PlayerInputHandler))]
+    [RequireComponent(typeof(PlayerAbilityManager))]
     public class PlayerResonate : MonoBehaviour
     {
         #region Resonate Settings
 
         [Header("Resonate Settings")]
 
-        // Point used as the center of our
-        // Resonate detection area.
+        // Center point used when searching
+        // for nearby ResonanceNodes.
         [SerializeField] private Transform resonatePoint;
 
-        // Maximum distance from resonatePoint
-        // where the Player can select a node.
+        // Maximum distance at which the Player
+        // can select a ResonanceNode.
         [SerializeField] private float resonateRadius = 2f;
 
-        // Layer containing objects our abilities
-        // are allowed to interact with.
+        // Determines which layers can be
+        // targeted by Resonate.
         //
-        // Use the shared AbilityTarget layer.
+        // Set this to AbilityTarget.
         [SerializeField] private LayerMask abilityTargetLayer;
 
         #endregion
@@ -42,21 +41,24 @@ namespace EverlastingNihil
 
         #region Components
 
-        // Player's central input handler.
-        private PlayerInputHandler input;
+        // Handles Player input events.
+        private PlayerInputHandler inputHandler;
+
+        // Determines whether Resonate
+        // has been unlocked.
+        private PlayerAbilityManager abilityManager;
 
         #endregion
 
 
         #region Selection State
 
-        // The first ResonanceNode selected by the Player.
+        // First ResonanceNode selected
+        // by the Player.
         private ResonanceNode selectedNode;
 
-        // Visual belonging to the currently selected node.
-        //
-        // We keep this reference so we can turn the
-        // selection highlight on and off.
+        // Visual component belonging to
+        // the currently selected node.
         private ResonanceVisual selectedVisual;
 
         #endregion
@@ -66,26 +68,40 @@ namespace EverlastingNihil
 
         private void Awake()
         {
-            // Get the Player's input handler.
-            input =
+            // Cache the Player input system.
+            inputHandler =
                 GetComponent<PlayerInputHandler>();
+
+            // Cache the ability progression system.
+            abilityManager =
+                GetComponent<PlayerAbilityManager>();
         }
 
 
         private void OnEnable()
         {
-            // Listen for the Resonate input event.
-            input.ResonatePressed +=
-                HandleResonatePressed;
+            // Subscribe to the Resonate input event.
+            if (inputHandler != null)
+            {
+                inputHandler.ResonatePressed +=
+                    HandleResonatePressed;
+            }
         }
 
 
         private void OnDisable()
         {
-            // Stop listening when this component
-            // becomes disabled.
-            input.ResonatePressed -=
-                HandleResonatePressed;
+            // Remove the input subscription
+            // when this component is disabled.
+            if (inputHandler != null)
+            {
+                inputHandler.ResonatePressed -=
+                    HandleResonatePressed;
+            }
+
+            // Remove any leftover selection
+            // when this component is disabled.
+            ClearSelection();
         }
 
         #endregion
@@ -94,22 +110,56 @@ namespace EverlastingNihil
         #region Resonate Input
 
         /// <summary>
-        /// Called whenever the Player presses
-        /// their Resonate button.
+        /// Called when the Player presses
+        /// the Resonate button.
         /// </summary>
         private void HandleResonatePressed()
         {
-            // Find the closest valid resonance node.
+            // -----------------------------
+            // ABILITY UNLOCK CHECK
+            // -----------------------------
+
+            // Resonate cannot be used until
+            // its crystal has been collected.
+            if (abilityManager == null ||
+                !abilityManager.CanResonate)
+            {
+                Debug.Log(
+                    "Resonate is locked. " +
+                    "Find the Resonate Crystal first."
+                );
+
+                return;
+            }
+
+
+            // -----------------------------
+            // RESONATE POINT CHECK
+            // -----------------------------
+
+            // Stop safely if the detection point
+            // wasn't assigned.
+            if (resonatePoint == null)
+            {
+                Debug.LogWarning(
+                    "PlayerResonate has no ResonatePoint assigned."
+                );
+
+                return;
+            }
+
+
+            // Find the closest ResonanceNode
+            // currently within range.
             ResonanceNode nearbyNode =
-                FindClosestResonanceNode();
+                FindClosestNode();
 
 
-            // Don't continue if there isn't
-            // a valid node nearby.
+            // Nothing was close enough.
             if (nearbyNode == null)
             {
                 Debug.Log(
-                    "No Resonance Node nearby."
+                    "No ResonanceNode is within range."
                 );
 
                 return;
@@ -120,31 +170,11 @@ namespace EverlastingNihil
             // FIRST SELECTION
             // -----------------------------
 
-            // If we don't currently have a node selected,
-            // this becomes our first node.
+            // If nothing has been selected yet,
+            // make this our first node.
             if (selectedNode == null)
             {
-                // Remember the node.
-                selectedNode = nearbyNode;
-
-
-                // Find its visual component.
-                selectedVisual =
-                    selectedNode.GetComponent<ResonanceVisual>();
-
-
-                // Highlight the selected node.
-                if (selectedVisual != null)
-                {
-                    selectedVisual.SetSelected(true);
-                }
-
-
-                Debug.Log(
-                    $"{selectedNode.gameObject.name} " +
-                    $"selected for resonance."
-                );
-
+                SelectNode(nearbyNode);
 
                 return;
             }
@@ -154,57 +184,30 @@ namespace EverlastingNihil
             // CANCEL SELECTION
             // -----------------------------
 
-            // Selecting the same node again cancels
-            // the current selection.
-            if (nearbyNode == selectedNode)
+            // Pressing Resonate on the same node
+            // cancels the current selection.
+            if (selectedNode == nearbyNode)
             {
-                // Remove the highlight.
-                if (selectedVisual != null)
-                {
-                    selectedVisual.SetSelected(false);
-                }
-
-
-                // Forget the selected node.
-                selectedNode = null;
-                selectedVisual = null;
-
-
-                Debug.Log(
-                    "Resonance selection canceled."
-                );
-
+                ClearSelection();
 
                 return;
             }
 
 
             // -----------------------------
-            // SECOND SELECTION
+            // CREATE CONNECTION
             // -----------------------------
 
-            // At this point:
-            //
-            // selectedNode = Node A
-            // nearbyNode   = Node B
-            //
-            // Connect them.
+            // We now have two different nodes,
+            // so connect them.
             selectedNode.LinkWith(
                 nearbyNode
             );
 
 
-            // Remove the selection highlight because
-            // the resonance connection is complete.
-            if (selectedVisual != null)
-            {
-                selectedVisual.SetSelected(false);
-            }
-
-
-            // Clear our temporary selection.
-            selectedNode = null;
-            selectedVisual = null;
+            // Remove the selection highlight
+            // after creating the connection.
+            ClearSelection();
         }
 
         #endregion
@@ -213,95 +216,146 @@ namespace EverlastingNihil
         #region Node Detection
 
         /// <summary>
-        /// Finds the closest ResonanceNode inside
-        /// the Player's resonance range.
+        /// Finds the closest ResonanceNode
+        /// inside the Player's Resonate radius.
         /// </summary>
-        private ResonanceNode FindClosestResonanceNode()
+        private ResonanceNode FindClosestNode()
         {
-            // Use resonatePoint if one is assigned.
-            //
-            // Otherwise use the Player's position.
-            Vector2 searchPosition =
-                resonatePoint != null
-                    ? resonatePoint.position
-                    : transform.position;
-
-
-            // Search for all colliders inside
-            // our resonance radius.
-            Collider2D[] hits =
+            // Detect all AbilityTarget colliders
+            // within the Resonate radius.
+            Collider2D[] targets =
                 Physics2D.OverlapCircleAll(
-                    searchPosition,
+                    resonatePoint.position,
                     resonateRadius,
                     abilityTargetLayer
                 );
 
 
-            // This will store the closest node found.
+            // Store our closest result.
             ResonanceNode closestNode = null;
 
-
-            // Begin with an infinitely large distance.
+            // Start with an infinitely
+            // large comparison distance.
             float closestDistance =
                 Mathf.Infinity;
 
 
-            // Examine every collider found.
-            foreach (Collider2D hit in hits)
+            // Check every detected collider.
+            foreach (Collider2D target in targets)
             {
-                // Search the collider and its parents
-                // for a ResonanceNode.
+                // Try to find a ResonanceNode.
                 ResonanceNode node =
-                    hit.GetComponentInParent<ResonanceNode>();
+                    target.GetComponent<ResonanceNode>();
 
 
-                // Ignore objects that aren't
-                // resonance nodes.
+                // Ignore objects that cannot resonate.
                 if (node == null)
                     continue;
 
 
-                // Calculate the distance between our
-                // search position and this node.
+                // Calculate the distance from our
+                // ResonatePoint to this node.
                 float distance =
                     Vector2.Distance(
-                        searchPosition,
+                        resonatePoint.position,
                         node.transform.position
                     );
 
 
-                // If this is the closest node we've
-                // found so far, remember it.
-                if (distance < closestDistance)
-                {
-                    closestDistance = distance;
-                    closestNode = node;
-                }
+                // Ignore it if we already found
+                // something closer.
+                if (distance >= closestDistance)
+                    continue;
+
+
+                // This is our new closest node.
+                closestDistance = distance;
+
+                closestNode = node;
             }
 
 
-            // Return the closest valid node.
             return closestNode;
         }
 
         #endregion
 
 
-        #region Debug Visualization
+        #region Selection
 
+        /// <summary>
+        /// Selects the first ResonanceNode.
+        /// </summary>
+        private void SelectNode(
+            ResonanceNode node
+        )
+        {
+            // Store the selected node.
+            selectedNode = node;
+
+
+            // Find its optional visual component.
+            selectedVisual =
+                selectedNode.GetComponent<ResonanceVisual>();
+
+
+            // Highlight the node if it has
+            // a ResonanceVisual.
+            if (selectedVisual != null)
+            {
+                selectedVisual.SetSelected(
+                    true
+                );
+            }
+
+
+            Debug.Log(
+                $"Selected ResonanceNode: " +
+                $"{selectedNode.gameObject.name}"
+            );
+        }
+
+
+        /// <summary>
+        /// Clears the currently selected node.
+        /// </summary>
+        private void ClearSelection()
+        {
+            // Remove the visual highlight.
+            if (selectedVisual != null)
+            {
+                selectedVisual.SetSelected(
+                    false
+                );
+            }
+
+
+            // Forget the current selection.
+            selectedNode = null;
+
+            selectedVisual = null;
+        }
+
+        #endregion
+
+
+        #region Editor Visualization
+
+        /// <summary>
+        /// Shows Resonate's detection radius
+        /// inside the Scene view.
+        /// </summary>
         private void OnDrawGizmosSelected()
         {
-            // Determine where the detection
-            // radius should be drawn.
-            Vector3 searchPosition =
-                resonatePoint != null
-                    ? resonatePoint.position
-                    : transform.position;
+            // We cannot draw the radius without
+            // a ResonatePoint.
+            if (resonatePoint == null)
+                return;
 
 
-            // Draw our resonance range in the Scene view.
+            // Draw the detection radius.
             Gizmos.DrawWireSphere(
-                searchPosition,
+                resonatePoint.position,
                 resonateRadius
             );
         }
