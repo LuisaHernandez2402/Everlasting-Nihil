@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 45cfd3b24aeca754bb30eb226578a212
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6001350852090870708
+    second: Mutare Attack_0
+  - first:
+      213: -5661332440890617264
+    second: Mutare Attack_1
+  - first:
+      213: -591207930303986908
+    second: Mutare Attack_2
+  - first:
+      213: -2198918250603586688
+    second: Mutare Attack_3
+  - first:
+      213: -190262682541370724
+    second: Mutare Attack_4
+  - first:
+      213: 4029640885871869260
+    second: Mutare Attack_5
+  - first:
+      213: -1872397639261841344
+    second: Mutare Attack_6
+  - first:
+      213: -1006591916893179838
+    second: Mutare Attack_7
+  - first:
+      213: -8476590240972788152
+    second: Mutare Attack_8
+  - first:
+      213: -2623771598364770615
+    second: Mutare Attack_9
+  - first:
+      213: 4933480116591819742
+    second: Mutare Attack_10
+  - first:
+      213: -8303483877552058722
+    second: Mutare Attack_11
+  - first:
+      213: 4429124018966187650
+    second: Mutare Attack_12
+  - first:
+      213: 4304144848695037726
+    second: Mutare Attack_13
+  - first:
+      213: -6618113461439081545
+    second: Mutare Attack_14
+  - first:
+      213: -5501735602946695961
+    second: Mutare Attack_15
+  - first:
+      213: 7062390363601844257
+    second: Mutare Attack_16
+  - first:
+      213: -4556181384565487601
+    second: Mutare Attack_17
+  - first:
+      213: 3848155110175762269
+    second: Mutare Attack_18
+  - first:
+      213: -627499674631407868
+    second: Mutare Attack_19
+  - first:
+      213: 6456342869272411872
+    second: Mutare Attack_20
+  - first:
+      213: -1203525882486354376
+    second: Mutare Attack_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mutare Attack_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1883
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb3d5fadc4194350800000000000000
+      internalID: 6001350852090870708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1883
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052d159d328ee61b0800000000000000
+      internalID: -5661332440890617264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_2
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1883
+        width: 199
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42346dd058b9bc7f0800000000000000
+      internalID: -591207930303986908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_3
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1883
+        width: 253
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b56ae508fdb71e0800000000000000
+      internalID: -2198918250603586688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_4
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1894
+        width: 339
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92db19291d0c5df0800000000000000
+      internalID: -190262682541370724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_5
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1883
+        width: 342
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d78c629092ce730800000000000000
+      internalID: 4029640885871869260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_6
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1883
+        width: 342
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04894897448e306e0800000000000000
+      internalID: -1872397639261841344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_7
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1439
+        width: 342
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2407dc71cfdd702f0800000000000000
+      internalID: -1006591916893179838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_8
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1440
+        width: 388
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e2644361a1d5a80800000000000000
+      internalID: -8476590240972788152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_9
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1440
+        width: 564
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce75b3f1ad769bd0800000000000000
+      internalID: -2623771598364770615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_10
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 1439
+        width: 586
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb78eff60e377440800000000000000
+      internalID: 4933480116591819742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 979
+        width: 585
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e8358386914cc80800000000000000
+      internalID: -8303483877552058722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_12
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 980
+        width: 583
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e41a824d8677d30800000000000000
+      internalID: 4429124018966187650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_13
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 979
+        width: 590
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f8b408fe46bbb30800000000000000
+      internalID: 4304144848695037726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 524
+        width: 564
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b351bffedcb724a0800000000000000
+      internalID: -6618113461439081545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_15
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 524
+        width: 388
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec1e3a5e98e5a3b0800000000000000
+      internalID: -5501735602946695961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_16
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 524
+        width: 342
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12831a71e96a20260800000000000000
+      internalID: 7062390363601844257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_17
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 523
+        width: 339
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f080ab0ab2135c0c0800000000000000
+      internalID: -4556181384565487601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_18
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 48
+        width: 253
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5761ae2fa4676530800000000000000
+      internalID: 3848155110175762269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_19
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 48
+        width: 199
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407fbecde5caa47f0800000000000000
+      internalID: -627499674631407868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_20
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 48
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eebb17e1a9899950800000000000000
+      internalID: 6456342869272411872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare Attack_21
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 48
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e896026973c4fe0800000000000000
+      internalID: -1203525882486354376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mutare Attack_0: 6001350852090870708
+      Mutare Attack_1: -5661332440890617264
+      Mutare Attack_10: 4933480116591819742
+      Mutare Attack_11: -8303483877552058722
+      Mutare Attack_12: 4429124018966187650
+      Mutare Attack_13: 4304144848695037726
+      Mutare Attack_14: -6618113461439081545
+      Mutare Attack_15: -5501735602946695961
+      Mutare Attack_16: 7062390363601844257
+      Mutare Attack_17: -4556181384565487601
+      Mutare Attack_18: 3848155110175762269
+      Mutare Attack_19: -627499674631407868
+      Mutare Attack_2: -591207930303986908
+      Mutare Attack_20: 6456342869272411872
+      Mutare Attack_21: -1203525882486354376
+      Mutare Attack_3: -2198918250603586688
+      Mutare Attack_4: -190262682541370724
+      Mutare Attack_5: 4029640885871869260
+      Mutare Attack_6: -1872397639261841344
+      Mutare Attack_7: -1006591916893179838
+      Mutare Attack_8: -8476590240972788152
+      Mutare Attack_9: -2623771598364770615
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
