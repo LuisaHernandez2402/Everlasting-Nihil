@@ -141,6 +141,16 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""Resonate"",
+                    ""type"": ""Button"",
+                    ""id"": ""dcbb23a8-8d92-4994-8733-ad37ed3ba29d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -352,6 +362,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Awaken"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c5d1fc33-9715-4761-8617-8134b5951669"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Resonate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c0e6d6f7-52f5-4c6a-803c-d4f437f6d164"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Resonate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -365,6 +397,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_Parry = m_Player.FindAction("Parry", throwIfNotFound: true);
         m_Player_Awaken = m_Player.FindAction("Awaken", throwIfNotFound: true);
+        m_Player_Resonate = m_Player.FindAction("Resonate", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -450,6 +483,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Dash;
     private readonly InputAction m_Player_Parry;
     private readonly InputAction m_Player_Awaken;
+    private readonly InputAction m_Player_Resonate;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -481,6 +515,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Awaken".
         /// </summary>
         public InputAction @Awaken => m_Wrapper.m_Player_Awaken;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Resonate".
+        /// </summary>
+        public InputAction @Resonate => m_Wrapper.m_Player_Resonate;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -522,6 +560,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Awaken.started += instance.OnAwaken;
             @Awaken.performed += instance.OnAwaken;
             @Awaken.canceled += instance.OnAwaken;
+            @Resonate.started += instance.OnResonate;
+            @Resonate.performed += instance.OnResonate;
+            @Resonate.canceled += instance.OnResonate;
         }
 
         /// <summary>
@@ -548,6 +589,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Awaken.started -= instance.OnAwaken;
             @Awaken.performed -= instance.OnAwaken;
             @Awaken.canceled -= instance.OnAwaken;
+            @Resonate.started -= instance.OnResonate;
+            @Resonate.performed -= instance.OnResonate;
+            @Resonate.canceled -= instance.OnResonate;
         }
 
         /// <summary>
@@ -623,5 +667,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnAwaken(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Resonate" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnResonate(InputAction.CallbackContext context);
     }
 }

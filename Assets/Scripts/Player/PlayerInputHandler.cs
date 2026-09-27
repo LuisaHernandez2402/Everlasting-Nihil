@@ -18,16 +18,25 @@ namespace EverlastingNihil
 
         #region Input Events
 
-        // Other player scripts can subscribe to these events.
-        // This keeps the input system separate from the actual abilities.
+        // Fired when the Jump button is pressed.
         public event Action JumpPressed;
+
+        // Fired when the Jump button is released.
         public event Action JumpReleased;
 
+        // Fired when Dash is pressed.
         public event Action DashPressed;
 
+        // Fired when Parry is pressed.
         public event Action ParryPressed;
 
+        // Fired when Awaken is pressed.
         public event Action AwakenPressed;
+
+        // Fired when Resonate is pressed.
+        //
+        // PlayerResonate will listen for this event.
+        public event Action ResonatePressed;
 
         #endregion
 
@@ -69,6 +78,13 @@ namespace EverlastingNihil
 
             //AWAKEN
             controls.Player.Awaken.started += OnAwakenStarted;
+
+            //RESONATE
+            // Listen for the Resonate input.
+            //
+            // "started" means this happens once when
+            // the button is initially pressed.
+            controls.Player.Resonate.started += OnResonateStarted;
         }
 
 
@@ -90,9 +106,26 @@ namespace EverlastingNihil
             controls.Player.Parry.started -= OnParryStarted;
 
             controls.Player.Awaken.started -= OnAwakenStarted;
+
+            // Stop listening for the Resonate input
+            // when this component is disabled.
+            controls.Player.Resonate.started -= OnResonateStarted;
         }
 
         #endregion
+
+        /// <summary>
+        /// Called by Unity's Input System when
+        /// the Resonate button is pressed.
+        /// </summary>
+        private void OnResonateStarted(
+            InputAction.CallbackContext context
+        )
+        {
+            // Notify anything listening for
+            // the Player's Resonate input.
+            ResonatePressed?.Invoke();
+        }
 
         #region Parry Input
 
