@@ -1,28 +1,57 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace EverlastingNihil
 {
+    /// <summary>
+    /// Emits reaction signals from an object.
+    ///
+    /// UnityEvents handle permanent Inspector connections.
+    /// ReactionEmitted handles runtime connections such
+    /// as the Resonate mechanic.
+    /// </summary>
     public class ReactionEmitter : MonoBehaviour
     {
-        #region Events
+        #region Inspector Events
 
         [Header("Reaction Output")]
 
-        // Anything connected here will react
-        // when this object emits a reaction.
+        // Permanent reactions configured
+        // through the Inspector.
         [SerializeField] private UnityEvent onReaction;
 
         #endregion
 
 
-        #region Reaction
+        #region Runtime Events
 
+        // Runtime reaction event.
+        //
+        // ResonanceNode listens to this.
+        public event Action ReactionEmitted;
+
+        #endregion
+
+
+        #region Reaction Logic
+
+        /// <summary>
+        /// Sends a reaction signal.
+        /// </summary>
         public void EmitReaction()
         {
-            Debug.Log($"{gameObject.name} emitted a reaction.");
+            Debug.Log(
+                $"{gameObject.name} emitted a reaction."
+            );
 
+
+            // Trigger Inspector reactions.
             onReaction?.Invoke();
+
+
+            // Trigger runtime reactions.
+            ReactionEmitted?.Invoke();
         }
 
         #endregion
