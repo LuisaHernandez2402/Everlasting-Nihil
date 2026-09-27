@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c551d97ffa115a94e8f853e72531f11a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 80909
+  packageName: Pixel Art Forest
+  packageVersion: 2.3
+  assetPath: Assets/Pixel Art Forest/Tiles/tileset_18.asset
+  uploadId: 333870
