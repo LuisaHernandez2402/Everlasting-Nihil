@@ -4,10 +4,15 @@ using UnityEngine;
 namespace EverlastingNihil
 {
     /// <summary>
-    /// Handles PLAYER-SPECIFIC death and respawning.
+    /// Handles the Player's death and respawn sequence.
     ///
-    /// Health.cs announces that the Player died.
-    /// This script decides what happens afterward.
+    /// When the Player dies:
+    /// - Movement is locked.
+    /// - Damage is disabled.
+    /// - The Player waits briefly.
+    /// - The Player moves to the active checkpoint.
+    /// - Health is restored.
+    /// - Gameplay resumes.
     /// </summary>
     [RequireComponent(typeof(Health))]
     [RequireComponent(typeof(Rigidbody2D))]
@@ -17,25 +22,29 @@ namespace EverlastingNihil
 
         [Header("Respawn Settings")]
 
-        // Transform representing the position where
-        // the Player should return after dying.
-        [SerializeField] private Transform respawnPoint;
-
-        // How long the game waits before respawning.
+        // How long we wait after death
+        // before respawning the Player.
         [SerializeField] private float respawnDelay = 1f;
+
+        // Backup respawn point.
+        //
+        // Normally we use CheckpointManager.
+        // This exists in case the manager
+        // isn't available for some reason.
+        [SerializeField] private Transform fallbackRespawnPoint;
 
         #endregion
 
 
         #region Components
 
-        // Player's universal Health component.
+        // Player's Health component.
         private Health health;
 
         // Player's Rigidbody2D.
         private Rigidbody2D rb;
 
-        // Player's movement controller.
+        // Player movement controller.
         private PlayerMovement movement;
 
         #endregion
@@ -43,8 +52,8 @@ namespace EverlastingNihil
 
         #region State
 
-        // Prevents multiple respawn sequences from
-        // starting at the same time.
+        // Prevents multiple respawn sequences
+        // from running at the same time.
         private bool isRespawning;
 
         #endregion
@@ -54,28 +63,34 @@ namespace EverlastingNihil
 
         private void Awake()
         {
-            // Get our required components.
-            health = GetComponent<Health>();
-            rb = GetComponent<Rigidbody2D>();
+            // Get required components.
+            health =
+                GetComponent<Health>();
+
+            rb =
+                GetComponent<Rigidbody2D>();
 
 
-            // Get the Player's movement script.
-            movement = GetComponent<PlayerMovement>();
+            // PlayerMovement is optional here,
+            // although the Player should normally have it.
+            movement =
+                GetComponent<PlayerMovement>();
         }
 
 
         private void OnEnable()
         {
-            // Listen for the Health death event.
-            health.Died += HandleDeath;
+            // Listen for the Player dying.
+            health.Died +=
+                HandleDeath;
         }
 
 
         private void OnDisable()
         {
-            // Stop listening when this component
-            // becomes disabled.
-            health.Died -= HandleDeath;
+            // Stop listening when disabled.
+            health.Died -=
+                HandleDeath;
         }
 
         #endregion
@@ -84,27 +99,30 @@ namespace EverlastingNihil
         #region Death
 
         /// <summary>
-        /// Called when the Player's Health reaches zero.
+        /// Called when Health announces that
+        /// the Player has died.
         /// </summary>
         private void HandleDeath()
         {
-            // Don't start another death sequence if
-            // we're already respawning.
+            // Don't start another respawn
+            // if one is already happening.
             if (isRespawning)
                 return;
 
 
-            // Start our respawn sequence.
-            StartCoroutine(RespawnRoutine());
+            // Start the respawn sequence.
+            StartCoroutine(
+                RespawnRoutine()
+            );
         }
 
         #endregion
 
 
-        #region Respawning
+        #region Respawn
 
         /// <summary>
-        /// Handles the complete Player respawn sequence.
+        /// Handles the complete respawn sequence.
         /// </summary>
         private IEnumerator RespawnRoutine()
         {
@@ -112,7 +130,7 @@ namespace EverlastingNihil
             isRespawning = true;
 
 
-            // Immediately stop any current velocity.
+            // Stop any existing movement.
             rb.linearVelocity = Vector2.zero;
 
 
@@ -123,12 +141,8 @@ namespace EverlastingNihil
             }
 
 
-            // Prevent any additional damage during
-            // the death/respawn sequence.
+            // Prevent additional damage while dead.
             health.CanTakeDamage = false;
-
-
-            Debug.Log("Player died. Respawning...");
 
 
             // Wait before respawning.
@@ -137,28 +151,24 @@ namespace EverlastingNihil
             );
 
 
-            // Move the Player to the assigned
-            // respawn location.
-            if (respawnPoint != null)
-            {
-                transform.position =
-                    respawnPoint.position;
-            }
-            else
-            {
-                // Warn us if we forgot to assign
-                // the respawn point in the Inspector.
-                Debug.LogWarning(
-                    "PlayerDeath has no Respawn Point assigned!"
-                );
-            }
+            // Ask the CheckpointManager for
+            // our current respawn position.
+            Vector3 respawnPosition =
+                GetRespawnPosition();
 
 
-            // Remove any leftover physics movement.
-            rb.linearVelocity = Vector2.zero;
+            // Move the Player to that position.
+            transform.position =
+                respawnPosition;
 
 
-            // Give the Player full health again.
+            // Make sure no previous physics velocity
+            // survives the respawn.
+            rb.linearVelocity =
+                Vector2.zero;
+
+
+            // Restore the Player's health.
             health.RestoreToFullHealth();
 
 
@@ -166,18 +176,49 @@ namespace EverlastingNihil
             health.CanTakeDamage = true;
 
 
-            // Give movement control back.
+            // Unlock movement.
             if (movement != null)
             {
                 movement.MovementLocked = false;
             }
 
 
-            // Respawning has finished.
+            // Respawn sequence is finished.
             isRespawning = false;
+        }
 
 
-            Debug.Log("Player respawned.");
+        /// <summary>
+        /// Determines where the Player
+        /// should respawn.
+        /// </summary>
+        private Vector3 GetRespawnPosition()
+        {
+            // Prefer our checkpoint system.
+            if (CheckpointManager.Instance != null)
+            {
+                return CheckpointManager.Instance
+                    .GetRespawnPosition();
+            }
+
+
+            // Use the Player's fallback point
+            // if the manager doesn't exist.
+            if (fallbackRespawnPoint != null)
+            {
+                return fallbackRespawnPoint.position;
+            }
+
+
+            // Emergency fallback.
+            //
+            // Ideally this should never happen.
+            Debug.LogWarning(
+                "No valid Player respawn position was found!"
+            );
+
+
+            return transform.position;
         }
 
         #endregion

@@ -151,6 +151,16 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""Sever"",
+                    ""type"": ""Button"",
+                    ""id"": ""05c7c65e-b269-47b0-8a20-9ae523e46025"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -384,6 +394,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Resonate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d238a0b4-ade7-464b-aa4a-172acebf36b4"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sever"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""268c1c2c-e054-4368-86dd-e65c7bf5b70f"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sever"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -398,6 +430,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Player_Parry = m_Player.FindAction("Parry", throwIfNotFound: true);
         m_Player_Awaken = m_Player.FindAction("Awaken", throwIfNotFound: true);
         m_Player_Resonate = m_Player.FindAction("Resonate", throwIfNotFound: true);
+        m_Player_Sever = m_Player.FindAction("Sever", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -484,6 +517,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Parry;
     private readonly InputAction m_Player_Awaken;
     private readonly InputAction m_Player_Resonate;
+    private readonly InputAction m_Player_Sever;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -519,6 +553,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Resonate".
         /// </summary>
         public InputAction @Resonate => m_Wrapper.m_Player_Resonate;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Sever".
+        /// </summary>
+        public InputAction @Sever => m_Wrapper.m_Player_Sever;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -563,6 +601,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Resonate.started += instance.OnResonate;
             @Resonate.performed += instance.OnResonate;
             @Resonate.canceled += instance.OnResonate;
+            @Sever.started += instance.OnSever;
+            @Sever.performed += instance.OnSever;
+            @Sever.canceled += instance.OnSever;
         }
 
         /// <summary>
@@ -592,6 +633,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Resonate.started -= instance.OnResonate;
             @Resonate.performed -= instance.OnResonate;
             @Resonate.canceled -= instance.OnResonate;
+            @Sever.started -= instance.OnSever;
+            @Sever.performed -= instance.OnSever;
+            @Sever.canceled -= instance.OnSever;
         }
 
         /// <summary>
@@ -674,5 +718,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnResonate(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Sever" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSever(InputAction.CallbackContext context);
     }
 }

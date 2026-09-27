@@ -5,12 +5,11 @@ using UnityEngine.Events;
 namespace EverlastingNihil
 {
     /// <summary>
-    /// Sends reaction signals to other systems.
+    /// Emits reaction signals from an object.
     ///
-    /// This supports:
-    /// 1. UnityEvents for connections made in the Inspector.
-    /// 2. C# events for connections made during gameplay,
-    ///    such as the Resonate ability.
+    /// UnityEvents handle permanent Inspector connections.
+    /// ReactionEmitted handles runtime connections such
+    /// as the Resonate mechanic.
     /// </summary>
     public class ReactionEmitter : MonoBehaviour
     {
@@ -18,11 +17,8 @@ namespace EverlastingNihil
 
         [Header("Reaction Output")]
 
-        // This event can be configured directly
-        // through the Unity Inspector.
-        //
-        // We can use this for permanent reactions
-        // that are already known when designing a puzzle.
+        // Permanent reactions configured
+        // through the Inspector.
         [SerializeField] private UnityEvent onReaction;
 
         #endregion
@@ -30,11 +26,9 @@ namespace EverlastingNihil
 
         #region Runtime Events
 
-        // This event allows other scripts to listen
-        // for reactions during gameplay.
+        // Runtime reaction event.
         //
-        // ResonanceNode uses this to detect when
-        // its object has emitted a reaction.
+        // ResonanceNode listens to this.
         public event Action ReactionEmitted;
 
         #endregion
@@ -43,24 +37,20 @@ namespace EverlastingNihil
         #region Reaction Logic
 
         /// <summary>
-        /// Emits a reaction from this object.
+        /// Sends a reaction signal.
         /// </summary>
         public void EmitReaction()
         {
-            // Print the reaction for testing/debugging.
             Debug.Log(
                 $"{gameObject.name} emitted a reaction."
             );
 
 
-            // Trigger anything connected through
-            // the Unity Inspector.
+            // Trigger Inspector reactions.
             onReaction?.Invoke();
 
 
-            // Notify scripts listening through code.
-            //
-            // ResonanceNode listens here.
+            // Trigger runtime reactions.
             ReactionEmitted?.Invoke();
         }
 
