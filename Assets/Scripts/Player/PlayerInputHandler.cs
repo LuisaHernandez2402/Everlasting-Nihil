@@ -7,61 +7,58 @@ namespace EverlastingNihil
     /// <summary>
     /// Central input handler for the Player.
     ///
-    /// This script reads Unity's New Input System
-    /// and sends input to the Player's other systems
-    /// through events.
+    /// This class reads the Unity Input System
+    /// and converts inputs into values and events
+    /// that the Player's other systems can use.
     ///
-    /// Individual abilities therefore do not need
-    /// to directly check keyboard/controller input.
+    /// This keeps movement, combat, and abilities
+    /// separated from the actual input system.
+    ///
+    /// No Update() is required.
     /// </summary>
     public class PlayerInputHandler : MonoBehaviour
     {
+        #region Input Controls
+
+        // Generated input class created from
+        // PlayerControls.inputactions.
+        private PlayerControls controls;
+
+        #endregion
+
+
         #region Movement Input
 
-        // Stores the Player's current movement direction.
+        // Current movement direction.
         //
-        // PlayerMovement and other movement-related
-        // systems can safely read this value.
-        public Vector2 MoveInput { get; private set; }
+        // PlayerMovement reads this value
+        // during FixedUpdate().
+        public Vector2 MoveInput
+        {
+            get;
+            private set;
+        }
 
         #endregion
 
 
         #region Input Events
 
-        // Fired when Jump is pressed.
+        // Jump events.
         public event Action JumpPressed;
-
-        // Fired when Jump is released.
         public event Action JumpReleased;
 
-        // Fired when Dash is pressed.
+        // Movement ability events.
         public event Action DashPressed;
-
-        // Fired when Parry is pressed.
         public event Action ParryPressed;
 
-        // Fired when Awaken is pressed.
+        // Combat event.
+        public event Action AttackPressed;
+
+        // Main power events.
         public event Action AwakenPressed;
-
-        // Fired when Resonate is pressed.
         public event Action ResonatePressed;
-
-        // Fired when Sever is pressed.
-        //
-        // PlayerSever will listen for this event.
         public event Action SeverPressed;
-
-        #endregion
-
-
-        #region Input System
-
-        // Generated class created from
-        // PlayerControls.inputactions.
-        //
-        // Do NOT manually edit PlayerControls.cs.
-        private PlayerControls controls;
 
         #endregion
 
@@ -85,88 +82,143 @@ namespace EverlastingNihil
             // MOVEMENT
             // -----------------------------
 
-            controls.Player.Move.performed += OnMove;
-            controls.Player.Move.canceled += OnMove;
+            controls.Player.Move.performed +=
+                HandleMovePerformed;
+
+            controls.Player.Move.canceled +=
+                HandleMoveCanceled;
 
 
             // -----------------------------
             // JUMP
             // -----------------------------
 
-            controls.Player.Jump.started += OnJumpStarted;
-            controls.Player.Jump.canceled += OnJumpCanceled;
+            controls.Player.Jump.started +=
+                HandleJumpStarted;
+
+            controls.Player.Jump.canceled +=
+                HandleJumpCanceled;
 
 
             // -----------------------------
             // DASH
             // -----------------------------
 
-            controls.Player.Dash.started += OnDashStarted;
+            controls.Player.Dash.started +=
+                HandleDashStarted;
 
 
             // -----------------------------
             // PARRY
             // -----------------------------
 
-            controls.Player.Parry.started += OnParryStarted;
+            controls.Player.Parry.started +=
+                HandleParryStarted;
+
+
+            // -----------------------------
+            // ATTACK
+            // -----------------------------
+
+            controls.Player.Attack.started +=
+                HandleAttackStarted;
 
 
             // -----------------------------
             // AWAKEN
             // -----------------------------
 
-            controls.Player.Awaken.started += OnAwakenStarted;
+            controls.Player.Awaken.started +=
+                HandleAwakenStarted;
 
 
             // -----------------------------
             // RESONATE
             // -----------------------------
 
-            controls.Player.Resonate.started += OnResonateStarted;
+            controls.Player.Resonate.started +=
+                HandleResonateStarted;
 
 
             // -----------------------------
             // SEVER
             // -----------------------------
 
-            controls.Player.Sever.started += OnSeverStarted;
+            controls.Player.Sever.started +=
+                HandleSeverStarted;
         }
 
 
         private void OnDisable()
         {
-            // Always unsubscribe from our Input System
-            // callbacks when this component is disabled.
-
-
+            // -----------------------------
             // MOVEMENT
-            controls.Player.Move.performed -= OnMove;
-            controls.Player.Move.canceled -= OnMove;
+            // -----------------------------
+
+            controls.Player.Move.performed -=
+                HandleMovePerformed;
+
+            controls.Player.Move.canceled -=
+                HandleMoveCanceled;
 
 
+            // -----------------------------
             // JUMP
-            controls.Player.Jump.started -= OnJumpStarted;
-            controls.Player.Jump.canceled -= OnJumpCanceled;
+            // -----------------------------
+
+            controls.Player.Jump.started -=
+                HandleJumpStarted;
+
+            controls.Player.Jump.canceled -=
+                HandleJumpCanceled;
 
 
+            // -----------------------------
             // DASH
-            controls.Player.Dash.started -= OnDashStarted;
+            // -----------------------------
+
+            controls.Player.Dash.started -=
+                HandleDashStarted;
 
 
+            // -----------------------------
             // PARRY
-            controls.Player.Parry.started -= OnParryStarted;
+            // -----------------------------
+
+            controls.Player.Parry.started -=
+                HandleParryStarted;
 
 
+            // -----------------------------
+            // ATTACK
+            // -----------------------------
+
+            controls.Player.Attack.started -=
+                HandleAttackStarted;
+
+
+            // -----------------------------
             // AWAKEN
-            controls.Player.Awaken.started -= OnAwakenStarted;
+            // -----------------------------
+
+            controls.Player.Awaken.started -=
+                HandleAwakenStarted;
 
 
+            // -----------------------------
             // RESONATE
-            controls.Player.Resonate.started -= OnResonateStarted;
+            // -----------------------------
+
+            controls.Player.Resonate.started -=
+                HandleResonateStarted;
 
 
+            // -----------------------------
             // SEVER
-            controls.Player.Sever.started -= OnSeverStarted;
+            // -----------------------------
+
+            controls.Player.Sever.started -=
+                HandleSeverStarted;
 
 
             // Disable the Player action map.
@@ -179,11 +231,29 @@ namespace EverlastingNihil
         #region Movement Callbacks
 
         /// <summary>
-        /// Reads the current movement Vector2.
+        /// Called whenever the movement
+        /// input changes.
         /// </summary>
-        private void OnMove(InputAction.CallbackContext context)
+        private void HandleMovePerformed(
+            InputAction.CallbackContext context
+        )
         {
-            MoveInput = context.ReadValue<Vector2>();
+            // Read the current Vector2 movement input.
+            MoveInput =
+                context.ReadValue<Vector2>();
+        }
+
+
+        /// <summary>
+        /// Called when movement input is released.
+        /// </summary>
+        private void HandleMoveCanceled(
+            InputAction.CallbackContext context
+        )
+        {
+            // Reset movement to zero.
+            MoveInput =
+                Vector2.zero;
         }
 
         #endregion
@@ -191,25 +261,54 @@ namespace EverlastingNihil
 
         #region Jump Callbacks
 
-        /// <summary>
-        /// Called when Jump is first pressed.
-        /// </summary>
-        private void OnJumpStarted(
+        private void HandleJumpStarted(
             InputAction.CallbackContext context
         )
         {
+            // Notify PlayerMovement that
+            // jump was pressed.
             JumpPressed?.Invoke();
         }
 
 
-        /// <summary>
-        /// Called when Jump is released.
-        /// </summary>
-        private void OnJumpCanceled(
+        private void HandleJumpCanceled(
             InputAction.CallbackContext context
         )
         {
+            // Notify PlayerMovement that
+            // jump was released.
             JumpReleased?.Invoke();
+        }
+
+        #endregion
+
+
+        #region Combat Callbacks
+
+        private void HandleDashStarted(
+            InputAction.CallbackContext context
+        )
+        {
+            // Notify PlayerDash.
+            DashPressed?.Invoke();
+        }
+
+
+        private void HandleParryStarted(
+            InputAction.CallbackContext context
+        )
+        {
+            // Notify PlayerParry.
+            ParryPressed?.Invoke();
+        }
+
+
+        private void HandleAttackStarted(
+            InputAction.CallbackContext context
+        )
+        {
+            // Notify PlayerAttack.
+            AttackPressed?.Invoke();
         }
 
         #endregion
@@ -217,57 +316,29 @@ namespace EverlastingNihil
 
         #region Ability Callbacks
 
-        /// <summary>
-        /// Announces a Dash request.
-        /// </summary>
-        private void OnDashStarted(
+        private void HandleAwakenStarted(
             InputAction.CallbackContext context
         )
         {
-            DashPressed?.Invoke();
-        }
-
-
-        /// <summary>
-        /// Announces a Parry request.
-        /// </summary>
-        private void OnParryStarted(
-            InputAction.CallbackContext context
-        )
-        {
-            ParryPressed?.Invoke();
-        }
-
-
-        /// <summary>
-        /// Announces an Awaken request.
-        /// </summary>
-        private void OnAwakenStarted(
-            InputAction.CallbackContext context
-        )
-        {
+            // Notify PlayerAwaken.
             AwakenPressed?.Invoke();
         }
 
 
-        /// <summary>
-        /// Announces a Resonate request.
-        /// </summary>
-        private void OnResonateStarted(
+        private void HandleResonateStarted(
             InputAction.CallbackContext context
         )
         {
+            // Notify PlayerResonate.
             ResonatePressed?.Invoke();
         }
 
 
-        /// <summary>
-        /// Announces a Sever request.
-        /// </summary>
-        private void OnSeverStarted(
+        private void HandleSeverStarted(
             InputAction.CallbackContext context
         )
         {
+            // Notify PlayerSever.
             SeverPressed?.Invoke();
         }
 

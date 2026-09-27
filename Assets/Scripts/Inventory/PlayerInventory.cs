@@ -7,56 +7,69 @@ namespace EverlastingNihil
     /// <summary>
     /// Stores the Player's important progression items.
     ///
-    /// For now, this inventory focuses on the three
-    /// ability crystals:
+    /// This currently tracks:
     ///
-    /// Awaken
-    /// Resonate
-    /// Sever
+    /// 1. The three major ability crystals:
+    ///    - Awaken
+    ///    - Resonate
+    ///    - Sever
     ///
-    /// Crystals are automatically considered equipped
-    /// when collected.
+    /// 2. Minor Burrow Crystals used for
+    ///    the Mole Guardian side quest.
     ///
     /// No Update() is required.
     /// </summary>
     public class PlayerInventory : MonoBehaviour
     {
-        #region Crystal Storage
+        #region Main Crystals
 
-        // Stores every crystal the Player currently owns.
-        //
-        // HashSet is useful here because the Player
-        // should never own duplicate progression crystals.
+        // Stores the major progression crystals
+        // the Player has already collected.
         private readonly HashSet<CrystalType>
             collectedCrystals =
                 new HashSet<CrystalType>();
 
-        #endregion
-
-
-        #region Events
-
-        /// <summary>
-        /// Fired whenever the Player obtains
-        /// a new crystal.
-        ///
-        /// Other systems can listen to this for:
-        /// - Ability unlocking
-        /// - UI
-        /// - Audio
-        /// - Visual effects
-        /// - Gate progression
-        /// </summary>
+        // Fired whenever a NEW major crystal
+        // is successfully collected.
         public event Action<CrystalType>
             CrystalCollected;
 
         #endregion
 
 
-        #region Crystal Collection
+        #region Burrow Crystals
+
+        // Number of optional/minor crystals
+        // collected for the Mole quest.
+        private int burrowCrystalCount;
+
+        // Public read-only access to the amount.
+        public int BurrowCrystalCount
+        {
+            get
+            {
+                return burrowCrystalCount;
+            }
+        }
+
+        // Fired whenever the Player collects
+        // another Burrow Crystal.
+        //
+        // The integer contains the NEW total.
+        public event Action<int>
+            BurrowCrystalCountChanged;
+
+        #endregion
+
+
+        #region Main Crystal Methods
 
         /// <summary>
-        /// Gives the Player a progression crystal.
+        /// Adds one of the three major
+        /// progression crystals.
+        ///
+        /// Returns true if the crystal
+        /// was newly collected.
         /// </summary>
         public bool AddCrystal(
             CrystalType crystalType
@@ -70,13 +83,12 @@ namespace EverlastingNihil
                 );
 
 
-            // Don't trigger collection logic
-            // for duplicate crystals.
+            // Don't collect duplicates.
             if (!wasAdded)
             {
                 Debug.Log(
-                    $"Player already owns the " +
-                    $"{crystalType} Crystal."
+                    $"{crystalType} Crystal " +
+                    "has already been collected."
                 );
 
                 return false;
@@ -88,8 +100,7 @@ namespace EverlastingNihil
             );
 
 
-            // Notify every system listening
-            // for crystal collection.
+            // Notify the rest of the game.
             CrystalCollected?.Invoke(
                 crystalType
             );
@@ -98,14 +109,10 @@ namespace EverlastingNihil
             return true;
         }
 
-        #endregion
-
-
-        #region Crystal Queries
 
         /// <summary>
-        /// Returns true if the Player owns
-        /// the requested crystal.
+        /// Checks whether the Player owns
+        /// a specific major crystal.
         /// </summary>
         public bool HasCrystal(
             CrystalType crystalType
@@ -119,7 +126,7 @@ namespace EverlastingNihil
 
         /// <summary>
         /// Returns how many of the three
-        /// progression crystals have been collected.
+        /// major crystals have been collected.
         /// </summary>
         public int GetCrystalCount()
         {
@@ -128,8 +135,8 @@ namespace EverlastingNihil
 
 
         /// <summary>
-        /// Returns true when the Player owns
-        /// Awaken, Resonate, AND Sever.
+        /// Checks whether all three major
+        /// progression crystals are owned.
         /// </summary>
         public bool HasAllCrystals()
         {
@@ -137,6 +144,48 @@ namespace EverlastingNihil
                 HasCrystal(CrystalType.Awaken) &&
                 HasCrystal(CrystalType.Resonate) &&
                 HasCrystal(CrystalType.Sever);
+        }
+
+        #endregion
+
+
+        #region Burrow Crystal Methods
+
+        /// <summary>
+        /// Adds one Burrow Crystal
+        /// to the Player's inventory.
+        /// </summary>
+        public void AddBurrowCrystal()
+        {
+            // Increase our side-quest currency.
+            burrowCrystalCount++;
+
+
+            Debug.Log(
+                $"Burrow Crystal collected. " +
+                $"Total: {burrowCrystalCount}"
+            );
+
+
+            // Notify quest systems and UI.
+            BurrowCrystalCountChanged?.Invoke(
+                burrowCrystalCount
+            );
+        }
+
+
+        /// <summary>
+        /// Checks whether the Player has
+        /// collected the requested number
+        /// of Burrow Crystals.
+        /// </summary>
+        public bool HasBurrowCrystals(
+            int requiredAmount
+        )
+        {
+            return
+                burrowCrystalCount >=
+                requiredAmount;
         }
 
         #endregion
