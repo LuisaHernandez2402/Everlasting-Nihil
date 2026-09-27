@@ -1,0 +1,2171 @@
+fileFormatVersion: 2
+guid: 38a4c74e267157d42973c3ca17576cd0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6725283813663915717
+    second: Mutare_0
+  - first:
+      213: -8115328418379795083
+    second: Mutare_1
+  - first:
+      213: -6067353506474418387
+    second: Mutare_2
+  - first:
+      213: -2866781884744812355
+    second: Mutare_3
+  - first:
+      213: -1644365663773731084
+    second: Mutare_4
+  - first:
+      213: 8468620562720995087
+    second: Mutare_5
+  - first:
+      213: -2687047792077462688
+    second: Mutare_6
+  - first:
+      213: 5648193589613303560
+    second: Mutare_7
+  - first:
+      213: 1332249739326689870
+    second: Mutare_8
+  - first:
+      213: 6458627669310824504
+    second: Mutare_9
+  - first:
+      213: 7434985282445197182
+    second: Mutare_10
+  - first:
+      213: -7168846575570512815
+    second: Mutare_11
+  - first:
+      213: 8673416602966234867
+    second: Mutare_12
+  - first:
+      213: -8092210524254200124
+    second: Mutare_13
+  - first:
+      213: 5458967541541368079
+    second: Mutare_14
+  - first:
+      213: -6718845955726672681
+    second: Mutare_15
+  - first:
+      213: 7836208025366979663
+    second: Mutare_16
+  - first:
+      213: -2041720235968548129
+    second: Mutare_17
+  - first:
+      213: -1598563222854034667
+    second: Mutare_18
+  - first:
+      213: -6218452942991923340
+    second: Mutare_19
+  - first:
+      213: -6203491997440305833
+    second: Mutare_20
+  - first:
+      213: 8403294511053514191
+    second: Mutare_21
+  - first:
+      213: 3408833413623093374
+    second: Mutare_22
+  - first:
+      213: -3712765183154640055
+    second: Mutare_23
+  - first:
+      213: -6334255542957375508
+    second: Mutare_24
+  - first:
+      213: 3637739527666345921
+    second: Mutare_25
+  - first:
+      213: 2401988358194971797
+    second: Mutare_26
+  - first:
+      213: 2087664128512471075
+    second: Mutare_27
+  - first:
+      213: 2845531515002444153
+    second: Mutare_28
+  - first:
+      213: 6225246496675997105
+    second: Mutare_29
+  - first:
+      213: -3193988596514113032
+    second: Mutare_30
+  - first:
+      213: 236396412986288593
+    second: Mutare_31
+  - first:
+      213: 2880234085765069743
+    second: Mutare_32
+  - first:
+      213: 4545468705295437836
+    second: Mutare_33
+  - first:
+      213: -6472570548928695971
+    second: Mutare_34
+  - first:
+      213: -6741357053587772353
+    second: Mutare_35
+  - first:
+      213: -6201048201334249529
+    second: Mutare_36
+  - first:
+      213: -454070687371708310
+    second: Mutare_37
+  - first:
+      213: 1720139990340761363
+    second: Mutare_38
+  - first:
+      213: 4359850630971217654
+    second: Mutare_39
+  - first:
+      213: -1815336714114920863
+    second: Mutare_40
+  - first:
+      213: 5988514295726381553
+    second: Mutare_41
+  - first:
+      213: -1135872178947412680
+    second: Mutare_42
+  - first:
+      213: 1968786239465467289
+    second: Mutare_43
+  - first:
+      213: 9187589825553823877
+    second: Mutare_44
+  - first:
+      213: -7388340027050466183
+    second: Mutare_45
+  - first:
+      213: -4236790308323388261
+    second: Mutare_46
+  - first:
+      213: -870942532165079402
+    second: Mutare_47
+  - first:
+      213: 8583730043405965517
+    second: Mutare_48
+  - first:
+      213: 2462953228907557240
+    second: Mutare_49
+  - first:
+      213: 947309546141699466
+    second: Mutare_50
+  - first:
+      213: 4631511101181642371
+    second: Mutare_51
+  - first:
+      213: 8597582461622378355
+    second: Mutare_52
+  - first:
+      213: -3766038192089012533
+    second: Mutare_53
+  - first:
+      213: -8782094395265686735
+    second: Mutare_54
+  - first:
+      213: 1768032787016207518
+    second: Mutare_55
+  - first:
+      213: -8041733615542036301
+    second: Mutare_56
+  - first:
+      213: -8970158634291229989
+    second: Mutare_57
+  - first:
+      213: -8740263495336397446
+    second: Mutare_58
+  - first:
+      213: -5625599762136870008
+    second: Mutare_59
+  - first:
+      213: 5173620733430532191
+    second: Mutare_60
+  - first:
+      213: 3926012131317054036
+    second: Mutare_61
+  - first:
+      213: -3015009762921338029
+    second: Mutare_62
+  - first:
+      213: -7666304867730573120
+    second: Mutare_63
+  - first:
+      213: 8365073432957728936
+    second: Mutare_64
+  - first:
+      213: 4491911540140068926
+    second: Mutare_65
+  - first:
+      213: -753247816009667693
+    second: Mutare_66
+  - first:
+      213: -7898328888797463329
+    second: Mutare_67
+  - first:
+      213: 1421024765530226189
+    second: Mutare_68
+  - first:
+      213: 4685410482863186749
+    second: Mutare_69
+  - first:
+      213: -5765259956190537994
+    second: Mutare_70
+  - first:
+      213: 8152268554607970493
+    second: Mutare_71
+  - first:
+      213: -5341912526622777798
+    second: Mutare_72
+  - first:
+      213: -6061620898113055466
+    second: Mutare_73
+  - first:
+      213: 9180048972060128009
+    second: Mutare_74
+  - first:
+      213: -4144039805973005354
+    second: Mutare_75
+  - first:
+      213: -3675842156647747977
+    second: Mutare_76
+  - first:
+      213: -2855124259179451499
+    second: Mutare_77
+  - first:
+      213: 2717551846221300737
+    second: Mutare_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mutare_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 3430
+        width: 159
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce3f171ff1055d50800000000000000
+      internalID: 6725283813663915717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_1
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 3429
+        width: 159
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575f6d2eccf806f80800000000000000
+      internalID: -8115328418379795083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_2
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 3428
+        width: 159
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f1fdfc12e6ccba0800000000000000
+      internalID: -6067353506474418387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_3
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 3428
+        width: 159
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8b24f80152738d0800000000000000
+      internalID: -2866781884744812355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_4
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 3428
+        width: 159
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6dae9142a0e29e0800000000000000
+      internalID: -1644365663773731084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_5
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 3427
+        width: 162
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f07bd8a7885968570800000000000000
+      internalID: 8468620562720995087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_6
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 3427
+        width: 162
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063a9ba0540b5bad0800000000000000
+      internalID: -2687047792077462688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_7
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 3426
+        width: 162
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8071a83f42a626e40800000000000000
+      internalID: 5648193589613303560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_8
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 3427
+        width: 162
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e429ca0541a1d7210800000000000000
+      internalID: 1332249739326689870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_9
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 3291
+        width: 162
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830e7cd55a7a1a950800000000000000
+      internalID: 6458627669310824504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_10
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 3289
+        width: 159
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f376ed8bf5e2760800000000000000
+      internalID: 7434985282445197182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_11
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 3288
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15418dd8504238c90800000000000000
+      internalID: -7168846575570512815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_12
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 3286
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f617c8527a2e5870800000000000000
+      internalID: 8673416602966234867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_13
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 3286
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce962e0761b2bf80800000000000000
+      internalID: -8092210524254200124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_14
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 3286
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01f5f16e0622cb40800000000000000
+      internalID: 5458967541541368079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_15
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 3288
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc7754833dd1c2a0800000000000000
+      internalID: -6718845955726672681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_16
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 3286
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44601a5eadcfbc60800000000000000
+      internalID: 7836208025366979663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_17
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 3286
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd23e5c434a5aa3e0800000000000000
+      internalID: -2041720235968548129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_18
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 3141
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b18c6e733c0d9e0800000000000000
+      internalID: -1598563222854034667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_19
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 3141
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477eb70cefd93b9a0800000000000000
+      internalID: -6218452942991923340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_20
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 3141
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755979555e4c8e9a0800000000000000
+      internalID: -6203491997440305833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_21
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 3141
+        width: 158
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5a552d5df7e9470800000000000000
+      internalID: 8403294511053514191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_22
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 3141
+        width: 144
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e789c7dcdeb9e4f20800000000000000
+      internalID: 3408833413623093374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_23
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 3141
+        width: 137
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b21abacbb997cc0800000000000000
+      internalID: -3712765183154640055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_24
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 3136
+        width: 137
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceff97dd4243818a0800000000000000
+      internalID: -6334255542957375508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_25
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 3135
+        width: 137
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c723fba3d8db7230800000000000000
+      internalID: 3637739527666345921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_26
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 3136
+        width: 137
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594c5dc7fa3955120800000000000000
+      internalID: 2401988358194971797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_27
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 2871
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320bf46c67fd8fc10800000000000000
+      internalID: 2087664128512471075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_28
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 2867
+        width: 137
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97956ec26db5d7720800000000000000
+      internalID: 2845531515002444153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_29
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 2848
+        width: 141
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b52e99b4b4846650800000000000000
+      internalID: 6225246496675997105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_30
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 2834
+        width: 137
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9b0204b4caca3d0800000000000000
+      internalID: -3193988596514113032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_31
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 2822
+        width: 137
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9693ef849d74300800000000000000
+      internalID: 236396412986288593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_32
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 2814
+        width: 124
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabbfff04a5a8f720800000000000000
+      internalID: 2880234085765069743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_33
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 2783
+        width: 124
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c001acc54bfb41f30800000000000000
+      internalID: 4545468705295437836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_34
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 2778
+        width: 189
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51337ff06fcc26a0800000000000000
+      internalID: -6472570548928695971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_35
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 2769
+        width: 198
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ca3dc1a73e172a0800000000000000
+      internalID: -6741357053587772353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_36
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 2346
+        width: 203
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7a564f38371f9a0800000000000000
+      internalID: -6201048201334249529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_37
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 2344
+        width: 199
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68ba489d11d2b9f0800000000000000
+      internalID: -454070687371708310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_38
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 2340
+        width: 176
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3177430253a2fd710800000000000000
+      internalID: 1720139990340761363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_39
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 2315
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f65dc4ac0d418c30800000000000000
+      internalID: 4359850630971217654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_40
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 2315
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e847760e0aec6e0800000000000000
+      internalID: -1815336714114920863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_41
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 2315
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f99e11060a7b1350800000000000000
+      internalID: 5988514295726381553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_42
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 2315
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d279775429c30f0800000000000000
+      internalID: -1135872178947412680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_43
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1864
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d240a57a8825b10800000000000000
+      internalID: 1968786239465467289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_44
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1864
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588f026b440e08f70800000000000000
+      internalID: 9187589825553823877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_45
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1864
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9746bd7f3e7577990800000000000000
+      internalID: -7388340027050466183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_46
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1864
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94119c79a5e335c0800000000000000
+      internalID: -4236790308323388261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_47
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 1864
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e6586a16ac9e3f0800000000000000
+      internalID: -870942532165079402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_48
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 1864
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc89f05fef88f1770800000000000000
+      internalID: 8583730043405965517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_49
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1404
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871bf6399ea2e2220800000000000000
+      internalID: 2462953228907557240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_50
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1404
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8dcc1e5305852d00800000000000000
+      internalID: 947309546141699466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_51
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1404
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386c537cece664040800000000000000
+      internalID: 4631511101181642371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_52
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1404
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f512862bfb05770800000000000000
+      internalID: 8597582461622378355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_53
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 1404
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6eaf5b7385cbbc0800000000000000
+      internalID: -3766038192089012533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_54
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 1404
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1336d325dabbf1680800000000000000
+      internalID: -8782094395265686735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_55
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 1404
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c485dc370598810800000000000000
+      internalID: 1768032787016207518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_56
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 982
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b89c4332e5066090800000000000000
+      internalID: -8041733615542036301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_57
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 971
+        width: 193
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda0b208f38938380800000000000000
+      internalID: -8970158634291229989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_58
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 961
+        width: 193
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75f82da8a854b680800000000000000
+      internalID: -8740263495336397446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_59
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 956
+        width: 193
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8835f4172dadde1b0800000000000000
+      internalID: -5625599762136870008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_60
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 982
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5809b265a46cc740800000000000000
+      internalID: 5173620733430532191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_61
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 982
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45af6078b3ffb7630800000000000000
+      internalID: 3926012131317054036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_62
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 977
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b2db648988826d0800000000000000
+      internalID: -3015009762921338029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_63
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 510
+        width: 193
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c832133750db9590800000000000000
+      internalID: -7666304867730573120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_64
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 501
+        width: 188
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8b08b97f5b61470800000000000000
+      internalID: 8365073432957728936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_65
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 488
+        width: 188
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30d6802fb9765e30800000000000000
+      internalID: 4491911540140068926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_66
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 487
+        width: 188
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ba7ea2a1deb85f0800000000000000
+      internalID: -753247816009667693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_67
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 487
+        width: 188
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc750809bf736290800000000000000
+      internalID: -7898328888797463329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_68
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 491
+        width: 188
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e367ece7e78b310800000000000000
+      internalID: 1421024765530226189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_69
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 490
+        width: 188
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33a3f1820ce50140800000000000000
+      internalID: 4685410482863186749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_70
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 487
+        width: 188
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f69a719d9eadffa0800000000000000
+      internalID: -5765259956190537994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_71
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 31
+        width: 188
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8cefece0da22170800000000000000
+      internalID: 8152268554607970493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_72
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 42
+        width: 188
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e90751cd6bdd5b0800000000000000
+      internalID: -5341912526622777798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_73
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 42
+        width: 188
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61513e4b8ebc0eba0800000000000000
+      internalID: -6061620898113055466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_74
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 42
+        width: 188
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9037550f6e5166f70800000000000000
+      internalID: 9180048972060128009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_75
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 35
+        width: 188
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db76e5a0c96d76c0800000000000000
+      internalID: -4144039805973005354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_76
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 42
+        width: 193
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77eea92b809ccfcc0800000000000000
+      internalID: -3675842156647747977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_77
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 55
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b22060d9f8068d0800000000000000
+      internalID: -2855124259179451499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutare_78
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 51
+        width: 193
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1044ab4810fa6b520800000000000000
+      internalID: 2717551846221300737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mutare_0: 6725283813663915717
+      Mutare_1: -8115328418379795083
+      Mutare_10: 7434985282445197182
+      Mutare_11: -7168846575570512815
+      Mutare_12: 8673416602966234867
+      Mutare_13: -8092210524254200124
+      Mutare_14: 5458967541541368079
+      Mutare_15: -6718845955726672681
+      Mutare_16: 7836208025366979663
+      Mutare_17: -2041720235968548129
+      Mutare_18: -1598563222854034667
+      Mutare_19: -6218452942991923340
+      Mutare_2: -6067353506474418387
+      Mutare_20: -6203491997440305833
+      Mutare_21: 8403294511053514191
+      Mutare_22: 3408833413623093374
+      Mutare_23: -3712765183154640055
+      Mutare_24: -6334255542957375508
+      Mutare_25: 3637739527666345921
+      Mutare_26: 2401988358194971797
+      Mutare_27: 2087664128512471075
+      Mutare_28: 2845531515002444153
+      Mutare_29: 6225246496675997105
+      Mutare_3: -2866781884744812355
+      Mutare_30: -3193988596514113032
+      Mutare_31: 236396412986288593
+      Mutare_32: 2880234085765069743
+      Mutare_33: 4545468705295437836
+      Mutare_34: -6472570548928695971
+      Mutare_35: -6741357053587772353
+      Mutare_36: -6201048201334249529
+      Mutare_37: -454070687371708310
+      Mutare_38: 1720139990340761363
+      Mutare_39: 4359850630971217654
+      Mutare_4: -1644365663773731084
+      Mutare_40: -1815336714114920863
+      Mutare_41: 5988514295726381553
+      Mutare_42: -1135872178947412680
+      Mutare_43: 1968786239465467289
+      Mutare_44: 9187589825553823877
+      Mutare_45: -7388340027050466183
+      Mutare_46: -4236790308323388261
+      Mutare_47: -870942532165079402
+      Mutare_48: 8583730043405965517
+      Mutare_49: 2462953228907557240
+      Mutare_5: 8468620562720995087
+      Mutare_50: 947309546141699466
+      Mutare_51: 4631511101181642371
+      Mutare_52: 8597582461622378355
+      Mutare_53: -3766038192089012533
+      Mutare_54: -8782094395265686735
+      Mutare_55: 1768032787016207518
+      Mutare_56: -8041733615542036301
+      Mutare_57: -8970158634291229989
+      Mutare_58: -8740263495336397446
+      Mutare_59: -5625599762136870008
+      Mutare_6: -2687047792077462688
+      Mutare_60: 5173620733430532191
+      Mutare_61: 3926012131317054036
+      Mutare_62: -3015009762921338029
+      Mutare_63: -7666304867730573120
+      Mutare_64: 8365073432957728936
+      Mutare_65: 4491911540140068926
+      Mutare_66: -753247816009667693
+      Mutare_67: -7898328888797463329
+      Mutare_68: 1421024765530226189
+      Mutare_69: 4685410482863186749
+      Mutare_7: 5648193589613303560
+      Mutare_70: -5765259956190537994
+      Mutare_71: 8152268554607970493
+      Mutare_72: -5341912526622777798
+      Mutare_73: -6061620898113055466
+      Mutare_74: 9180048972060128009
+      Mutare_75: -4144039805973005354
+      Mutare_76: -3675842156647747977
+      Mutare_77: -2855124259179451499
+      Mutare_78: 2717551846221300737
+      Mutare_8: 1332249739326689870
+      Mutare_9: 6458627669310824504
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
