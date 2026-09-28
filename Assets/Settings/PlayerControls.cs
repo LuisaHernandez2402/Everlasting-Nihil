@@ -165,7 +165,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Attack"",
                     ""type"": ""Button"",
-                    ""id"": ""80fd3cca-6d69-4a8e-bbbc-48f563be39a1"",
+                    ""id"": ""bf2697ba-4ac5-4878-88d0-ced6c24e4a15"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -429,7 +429,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ad67df60-4cc8-479e-8d30-597841f8f946"",
+                    ""id"": ""e56e09e1-a7e2-4f49-86c1-f00d197d9597"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -440,7 +440,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""49549f5b-0289-428b-a658-870f0c55b657"",
+                    ""id"": ""8ea3b4cd-7a6b-423a-8dd5-c41cc0777665"",
                     ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",

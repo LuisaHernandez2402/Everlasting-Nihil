@@ -7,9 +7,11 @@ namespace EverlastingNihil
     /// <summary>
     /// Handles the Player's basic melee attack.
     ///
-    /// When the attack input is pressed,
-    /// the script checks a small area in front
-    /// of the Player for damageable targets.
+    /// When AttackPressed is received:
+    /// - Checks an area around AttackPoint.
+    /// - Finds objects with Health.
+    /// - Deals damage.
+    /// - Prevents attacking again until cooldown finishes.
     ///
     /// No Update() is required.
     /// </summary>
@@ -21,26 +23,25 @@ namespace EverlastingNihil
         [Header("Attack Settings")]
 
         // Point in front of the Player where
-        // the attack hitbox is created.
+        // the attack detection happens.
         [SerializeField]
         private Transform attackPoint;
 
-        // Radius of the melee attack.
+        // Size of the circular attack area.
         [SerializeField]
         private float attackRadius = 0.8f;
 
-        // Amount of damage dealt per attack.
+        // Damage dealt by one sword attack.
         [SerializeField]
         private int attackDamage = 20;
 
-        // Minimum amount of time between attacks.
+        // Time before another attack
+        // can be performed.
         [SerializeField]
         private float attackCooldown = 0.35f;
 
         // Layers that can be damaged
-        // by the Player's attack.
-        //
-        // Set this to the Boss layer.
+        // by the Player's sword.
         [SerializeField]
         private LayerMask damageableLayers;
 
@@ -49,7 +50,7 @@ namespace EverlastingNihil
 
         #region Components
 
-        // Handles the Player's input events.
+        // Handles Input System events.
         private PlayerInputHandler inputHandler;
 
         #endregion
@@ -57,8 +58,8 @@ namespace EverlastingNihil
 
         #region Attack State
 
-        // Prevents attacking again while
-        // the current attack is cooling down.
+        // Prevents attacking while
+        // the cooldown is active.
         private bool canAttack = true;
 
         #endregion
@@ -68,7 +69,7 @@ namespace EverlastingNihil
 
         private void Awake()
         {
-            // Cache our input handler.
+            // Cache PlayerInputHandler.
             inputHandler =
                 GetComponent<PlayerInputHandler>();
         }
@@ -76,7 +77,7 @@ namespace EverlastingNihil
 
         private void OnEnable()
         {
-            // Listen for the attack input.
+            // Listen for the Attack input.
             if (inputHandler != null)
             {
                 inputHandler.AttackPressed +=
@@ -87,12 +88,29 @@ namespace EverlastingNihil
 
         private void OnDisable()
         {
-            // Remove the input subscription.
+            // Remove the event subscription.
             if (inputHandler != null)
             {
                 inputHandler.AttackPressed -=
                     HandleAttackPressed;
             }
+        }
+
+
+        private void OnDrawGizmosSelected()
+        {
+            // Don't draw anything if
+            // AttackPoint isn't assigned.
+            if (attackPoint == null)
+                return;
+
+
+            // Show the attack radius in
+            // the Scene view.
+            Gizmos.DrawWireSphere(
+                attackPoint.position,
+                attackRadius
+            );
         }
 
         #endregion
@@ -101,8 +119,8 @@ namespace EverlastingNihil
         #region Attack Input
 
         /// <summary>
-        /// Called whenever the Player
-        /// presses the attack button.
+        /// Called whenever PlayerInputHandler
+        /// receives the Attack input.
         /// </summary>
         private void HandleAttackPressed()
         {
@@ -111,23 +129,17 @@ namespace EverlastingNihil
                 return;
 
 
-            // Make sure an AttackPoint
-            // has actually been assigned.
+            // Don't attack without
+            // an AttackPoint.
             if (attackPoint == null)
-            {
-                Debug.LogWarning(
-                    "PlayerAttack has no AttackPoint assigned."
-                );
-
                 return;
-            }
 
 
-            // Perform the attack.
+            // Perform the actual attack.
             PerformAttack();
 
 
-            // Begin our cooldown.
+            // Begin cooldown.
             StartCoroutine(
                 AttackCooldownRoutine()
             );
@@ -136,17 +148,17 @@ namespace EverlastingNihil
         #endregion
 
 
-        #region Attack Logic
+        #region Attack
 
         /// <summary>
         /// Searches the attack area for
-        /// objects containing Health.
+        /// damageable objects and damages them.
         /// </summary>
         private void PerformAttack()
         {
             // Find every collider inside
-            // our melee attack radius.
-            Collider2D[] hits =
+            // the sword's attack radius.
+            Collider2D[] hitColliders =
                 Physics2D.OverlapCircleAll(
                     attackPoint.position,
                     attackRadius,
@@ -154,61 +166,60 @@ namespace EverlastingNihil
                 );
 
 
-            // Keep track of Health components
-            // already damaged by this swing.
+            // Keeps track of Health components
+            // we've already damaged during
+            // this specific attack.
             //
             // This prevents a Boss with multiple
-            // colliders from taking damage several
-            // times from one attack.
+            // colliders from taking damage twice.
             HashSet<Health> damagedTargets =
                 new HashSet<Health>();
 
 
-            // Check every collider we hit.
-            foreach (Collider2D hit in hits)
+            // Check everything we hit.
+            foreach (Collider2D hitCollider
+                     in hitColliders)
             {
-                // Try finding Health directly
-                // on this object.
-                Health health =
-                    hit.GetComponent<Health>();
+                // First try finding Health
+                // directly on the object.
+                Health targetHealth =
+                    hitCollider.GetComponent<Health>();
 
 
-                // If Health isn't directly on the
-                // collider, check its parent.
-                if (health == null)
+                // If Health isn't directly on
+                // the collider, search its parent.
+                if (targetHealth == null)
                 {
-                    health =
-                        hit.GetComponentInParent<Health>();
+                    targetHealth =
+                        hitCollider
+                            .GetComponentInParent<Health>();
                 }
 
 
                 // Ignore objects without Health.
-                if (health == null)
+                if (targetHealth == null)
                     continue;
 
 
-                // Ignore a target we've already
-                // damaged during this attack.
-                if (damagedTargets.Contains(health))
+                // Don't damage the same Health
+                // component multiple times during
+                // one sword swing.
+                if (damagedTargets.Contains(
+                        targetHealth))
+                {
                     continue;
+                }
 
 
-                // Damage the target.
-                health.TakeDamage(
-                    attackDamage
-                );
-
-
-                // Remember this target so another
-                // collider doesn't damage it again.
+                // Remember this target.
                 damagedTargets.Add(
-                    health
+                    targetHealth
                 );
 
 
-                Debug.Log(
-                    $"Player hit {health.gameObject.name} " +
-                    $"for {attackDamage} damage."
+                // Deal damage.
+                targetHealth.TakeDamage(
+                    attackDamage
                 );
             }
         }
@@ -216,11 +227,11 @@ namespace EverlastingNihil
         #endregion
 
 
-        #region Attack Cooldown
+        #region Cooldown
 
         /// <summary>
-        /// Prevents attack spamming for
-        /// a short amount of time.
+        /// Prevents the Player from attacking
+        /// continuously without delay.
         /// </summary>
         private IEnumerator AttackCooldownRoutine()
         {
@@ -228,38 +239,15 @@ namespace EverlastingNihil
             canAttack = false;
 
 
-            // Wait for the cooldown.
-            yield return new WaitForSeconds(
-                attackCooldown
-            );
+            // Wait for our cooldown.
+            yield return
+                new WaitForSeconds(
+                    attackCooldown
+                );
 
 
             // Allow another attack.
             canAttack = true;
-        }
-
-        #endregion
-
-
-        #region Editor Visualization
-
-        /// <summary>
-        /// Displays the attack hitbox
-        /// inside the Scene view.
-        /// </summary>
-        private void OnDrawGizmosSelected()
-        {
-            // We need an AttackPoint
-            // before drawing the radius.
-            if (attackPoint == null)
-                return;
-
-
-            // Draw the attack range.
-            Gizmos.DrawWireSphere(
-                attackPoint.position,
-                attackRadius
-            );
         }
 
         #endregion
