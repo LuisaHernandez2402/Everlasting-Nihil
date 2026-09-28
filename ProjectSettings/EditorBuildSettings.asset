@@ -21,16 +21,16 @@ EditorBuildSettings:
     path: Assets/Scenes/02_Omnia.unity
     guid: 4a11fc03529ff4b28ba64508b5fad81b
   - enabled: 1
-    path: Assets/Scenes/03_LiminalArbora.unity
+    path: Assets/Scenes/LiminalArbora.unity
     guid: 576b5ebeb79304cc1a7b95aebd4218ea
   - enabled: 1
-    path: Assets/Scenes/04_UnderBurrow.unity
+    path: Assets/Scenes/03_UnderBurrow.unity
     guid: 0463701c74b4b4672a002b36bb6a35c5
   - enabled: 1
     path: Assets/Scenes/05_MainGateCutScene.unity
     guid: 1b36b5c820d1a408a851ef01a2b02bf0
   - enabled: 1
-    path: Assets/Scenes/06_Nihil.unity
+    path: Assets/Scenes/04_Nihil.unity
     guid: d2d59b55e5fad46c9ab033cd33d9b86c
   - enabled: 1
     path: Assets/Scenes/07_EndCutScene.unity
