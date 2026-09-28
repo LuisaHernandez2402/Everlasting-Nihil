@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 0da6db5375af6594c86acf244c8b6de4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4639939991911046553
+    second: fading mole sheet_0
+  - first:
+      213: -2418799391303569101
+    second: fading mole sheet_1
+  - first:
+      213: 2057509737806019173
+    second: fading mole sheet_2
+  - first:
+      213: -6060833409181397960
+    second: fading mole sheet_3
+  - first:
+      213: -3892477434104714092
+    second: fading mole sheet_4
+  - first:
+      213: 3699784191781305377
+    second: fading mole sheet_5
+  - first:
+      213: -6876309484342671982
+    second: fading mole sheet_6
+  - first:
+      213: 4344719159348003261
+    second: fading mole sheet_7
+  - first:
+      213: -4818069778210872284
+    second: fading mole sheet_8
+  - first:
+      213: -7534251374869145506
+    second: fading mole sheet_9
+  - first:
+      213: 8880553410604095407
+    second: fading mole sheet_10
+  - first:
+      213: 4876279867725254180
+    second: fading mole sheet_11
+  - first:
+      213: 1607315490990719313
+    second: fading mole sheet_12
+  - first:
+      213: 7225283448164784550
+    second: fading mole sheet_13
+  - first:
+      213: 6056507912900231165
+    second: fading mole sheet_14
+  - first:
+      213: -606499119522731523
+    second: fading mole sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 0.9
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fading mole sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1961
+        width: 619
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762630b292f9b9fb0800000000000000
+      internalID: -4639939991911046553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_1
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1957
+        width: 625
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3317b6ad4c2be6ed0800000000000000
+      internalID: -2418799391303569101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 1957
+        width: 647
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ab5d3943ebd8c10800000000000000
+      internalID: 2057509737806019173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1635
+        width: 619
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c4ce2402893eba0800000000000000
+      internalID: -6060833409181397960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_4
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1631
+        width: 624
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ce6fb95642bf9c0800000000000000
+      internalID: -3892477434104714092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 1631
+        width: 643
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12cfab0ce16485330800000000000000
+      internalID: 3699784191781305377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1309
+        width: 619
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2950b1cc4f07290a0800000000000000
+      internalID: -6876309484342671982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_7
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 937
+        width: 624
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db185cd5e0b8b4c30800000000000000
+      internalID: 4344719159348003261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_8
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1323
+        width: 619
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42422be5017c22db0800000000000000
+      internalID: -4818069778210872284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 937
+        width: 647
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e581d60fa46f07790800000000000000
+      internalID: -7534251374869145506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 1319
+        width: 619
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7d0f796401e3b70800000000000000
+      internalID: 8880553410604095407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 980
+        width: 619
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e072d34b60ca340800000000000000
+      internalID: 4876279867725254180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 517
+        width: 623
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1510c725ce45e4610800000000000000
+      internalID: 1607315490990719313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 642
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a91f51d30d554460800000000000000
+      internalID: 7225283448164784550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_14
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 517
+        width: 628
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dffb2c7abd90d0450800000000000000
+      internalID: 6056507912900231165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fading mole sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 517
+        width: 647
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9a240a3484597f0800000000000000
+      internalID: -606499119522731523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fading mole sheet_0: -4639939991911046553
+      fading mole sheet_1: -2418799391303569101
+      fading mole sheet_10: 8880553410604095407
+      fading mole sheet_11: 4876279867725254180
+      fading mole sheet_12: 1607315490990719313
+      fading mole sheet_13: 7225283448164784550
+      fading mole sheet_14: 6056507912900231165
+      fading mole sheet_15: -606499119522731523
+      fading mole sheet_2: 2057509737806019173
+      fading mole sheet_3: -6060833409181397960
+      fading mole sheet_4: -3892477434104714092
+      fading mole sheet_5: 3699784191781305377
+      fading mole sheet_6: -6876309484342671982
+      fading mole sheet_7: 4344719159348003261
+      fading mole sheet_8: -4818069778210872284
+      fading mole sheet_9: -7534251374869145506
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

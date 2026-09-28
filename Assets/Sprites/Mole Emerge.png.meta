@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: 35ff4e8892aea6c41aeb72d8f3d37344
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3417014673296312596
+    second: emerge of mole_0
+  - first:
+      213: 1506592323023888649
+    second: emerge of mole_1
+  - first:
+      213: -7926056705997210895
+    second: emerge of mole_2
+  - first:
+      213: -3316828128562424813
+    second: emerge of mole_3
+  - first:
+      213: -3020489128952841723
+    second: emerge of mole_4
+  - first:
+      213: 9058682840082732402
+    second: emerge of mole_5
+  - first:
+      213: -2467634256296347060
+    second: emerge of mole_6
+  - first:
+      213: 733627834756062015
+    second: emerge of mole_7
+  - first:
+      213: -3315291334594377245
+    second: emerge of mole_8
+  - first:
+      213: -8242851326203080250
+    second: emerge of mole_9
+  - first:
+      213: -5501388904695460847
+    second: emerge of mole_10
+  - first:
+      213: -7005273005441519656
+    second: emerge of mole_11
+  - first:
+      213: -7319965597120619103
+    second: emerge of mole_12
+  - first:
+      213: 829102808022938380
+    second: emerge of mole_13
+  - first:
+      213: -9126064189216948233
+    second: emerge of mole_14
+  - first:
+      213: -8622182523807147348
+    second: emerge of mole_15
+  - first:
+      213: 7686859970718100827
+    second: emerge of mole_16
+  - first:
+      213: 7642534667682545763
+    second: emerge of mole_17
+  - first:
+      213: 5927411333433051742
+    second: emerge of mole_18
+  - first:
+      213: -8384844621494587595
+    second: emerge of mole_19
+  - first:
+      213: -5903696070663175369
+    second: emerge of mole_20
+  - first:
+      213: -5160890966316144986
+    second: emerge of mole_21
+  - first:
+      213: -8884862133834313334
+    second: emerge of mole_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: emerge of mole_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 434
+        width: 251
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce630ed32435490d0800000000000000
+      internalID: -3417014673296312596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 430
+        width: 253
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9016b2b4cbd78e410800000000000000
+      internalID: 1506592323023888649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_2
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 427
+        width: 255
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fafe618b6df00290800000000000000
+      internalID: -7926056705997210895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_3
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 427
+        width: 256
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3145300f36248f1d0800000000000000
+      internalID: -3316828128562424813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_4
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 427
+        width: 255
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a36d4f3211516d0800000000000000
+      internalID: -3020489128952841723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_5
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 430
+        width: 253
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275de005c08e6bd70800000000000000
+      internalID: 9058682840082732402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_6
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 430
+        width: 254
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4afeddc7b331cdd0800000000000000
+      internalID: -2467634256296347060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_7
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 430
+        width: 254
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b59f7f0ae5e2a00800000000000000
+      internalID: 733627834756062015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291
+        width: 254
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9429aa818bdf1d0800000000000000
+      internalID: -3315291334594377245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 291
+        width: 254
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1de4d24628b9d80800000000000000
+      internalID: -8242851326203080250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_10
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 291
+        width: 254
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c0a5450f327a3b0800000000000000
+      internalID: -5501388904695460847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_11
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 291
+        width: 253
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df660c215548ce90800000000000000
+      internalID: -7005273005441519656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_12
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 295
+        width: 251
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad9b8f72124a6a90800000000000000
+      internalID: -7319965597120619103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_13
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 270
+        width: 282
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c037c727c90918b00800000000000000
+      internalID: 829102808022938380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_14
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 270
+        width: 271
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff7f4cc8f4b95180800000000000000
+      internalID: -9126064189216948233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 274
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caad4e74daad75880800000000000000
+      internalID: -8622182523807147348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_16
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 90
+        width: 285
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d62d8aa663daa60800000000000000
+      internalID: 7686859970718100827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_17
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 76
+        width: 288
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36083d2d9ccbf0a60800000000000000
+      internalID: 7642534667682545763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_18
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 77
+        width: 273
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ac6e6f335624250800000000000000
+      internalID: 5927411333433051742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_19
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 263
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f68f6dd3c03ab80800000000000000
+      internalID: -8384844621494587595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_20
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733804ee3bbd11ea0800000000000000
+      internalID: -5903696070663175369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_21
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 7
+        width: 273
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a6243c7205d068b0800000000000000
+      internalID: -5160890966316144986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emerge of mole_22
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a819c7a96f0a2b480800000000000000
+      internalID: -8884862133834313334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      emerge of mole_0: -3417014673296312596
+      emerge of mole_1: 1506592323023888649
+      emerge of mole_10: -5501388904695460847
+      emerge of mole_11: -7005273005441519656
+      emerge of mole_12: -7319965597120619103
+      emerge of mole_13: 829102808022938380
+      emerge of mole_14: -9126064189216948233
+      emerge of mole_15: -8622182523807147348
+      emerge of mole_16: 7686859970718100827
+      emerge of mole_17: 7642534667682545763
+      emerge of mole_18: 5927411333433051742
+      emerge of mole_19: -8384844621494587595
+      emerge of mole_2: -7926056705997210895
+      emerge of mole_20: -5903696070663175369
+      emerge of mole_21: -5160890966316144986
+      emerge of mole_22: -8884862133834313334
+      emerge of mole_3: -3316828128562424813
+      emerge of mole_4: -3020489128952841723
+      emerge of mole_5: 9058682840082732402
+      emerge of mole_6: -2467634256296347060
+      emerge of mole_7: 733627834756062015
+      emerge of mole_8: -3315291334594377245
+      emerge of mole_9: -8242851326203080250
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
