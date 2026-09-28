@@ -82,13 +82,41 @@ namespace EverlastingNihil
 
         #region Unity Methods
 
-        private void Awake()
+        private void Start()
+{
+    // Get the Camera component attached
+    // to this GameObject.
+    cameraComponent =
+        GetComponent<Camera>();
+
+
+    // If no target was assigned in the Inspector,
+    // automatically find our persistent Player.
+    if (target == null)
+    {
+        PlayerMovement player =
+            FindFirstObjectByType<PlayerMovement>();
+
+
+        if (player != null)
         {
-            // Cache the Camera component so we
-            // don't repeatedly search for it.
-            cameraComponent =
-                GetComponent<Camera>();
+            // Follow the persistent Player.
+            target = player.transform;
+
+            Debug.Log(
+                "CameraFollow found the Player.",
+                this
+            );
         }
+        else
+        {
+            Debug.LogWarning(
+                "CameraFollow could not find the Player!",
+                this
+            );
+        }
+    }
+}
 
 
         /// <summary>

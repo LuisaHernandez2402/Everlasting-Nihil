@@ -7,12 +7,12 @@ namespace EverlastingNihil
     /// <summary>
     /// Central input handler for the Player.
     ///
-    /// This class reads the Unity Input System
-    /// and converts inputs into values and events
-    /// that the Player's other systems can use.
+    /// This script reads the generated PlayerControls
+    /// Input System class and sends events to the
+    /// Player's other gameplay scripts.
     ///
-    /// This keeps movement, combat, and abilities
-    /// separated from the actual input system.
+    /// Other scripts should listen to these events
+    /// instead of directly reading keyboard/controller input.
     ///
     /// No Update() is required.
     /// </summary>
@@ -20,7 +20,7 @@ namespace EverlastingNihil
     {
         #region Input Controls
 
-        // Generated input class created from
+        // Generated automatically from
         // PlayerControls.inputactions.
         private PlayerControls controls;
 
@@ -29,10 +29,15 @@ namespace EverlastingNihil
 
         #region Movement Input
 
-        // Current movement direction.
-        //
-        // PlayerMovement reads this value
-        // during FixedUpdate().
+        /// <summary>
+        /// Current movement direction.
+        ///
+        /// X:
+        /// -1 = Left
+        ///  1 = Right
+        ///
+        /// Y can also be used later if needed.
+        /// </summary>
         public Vector2 MoveInput
         {
             get;
@@ -44,20 +49,51 @@ namespace EverlastingNihil
 
         #region Input Events
 
-        // Jump events.
+        // -----------------------------
+        // JUMP
+        // -----------------------------
+
+        // Fired when Jump is initially pressed.
         public event Action JumpPressed;
+
+        // Fired when Jump is released.
+        //
+        // PlayerMovement uses this for
+        // variable jump height / jump cutting.
         public event Action JumpReleased;
 
-        // Movement ability events.
+
+        // -----------------------------
+        // MOVEMENT ABILITIES
+        // -----------------------------
+
+        // Fired when Dash is pressed.
         public event Action DashPressed;
+
+
+        // -----------------------------
+        // COMBAT
+        // -----------------------------
+
+        // Fired when Parry is pressed.
         public event Action ParryPressed;
 
-        // Combat event.
+        // Fired when the basic sword
+        // attack is pressed.
         public event Action AttackPressed;
 
-        // Main power events.
+
+        // -----------------------------
+        // CRYSTAL ABILITIES
+        // -----------------------------
+
+        // Fired when Awaken is pressed.
         public event Action AwakenPressed;
+
+        // Fired when Resonate is pressed.
         public event Action ResonatePressed;
+
+        // Fired when Sever is pressed.
         public event Action SeverPressed;
 
         #endregion
@@ -67,14 +103,19 @@ namespace EverlastingNihil
 
         private void Awake()
         {
-            // Create our generated input controls.
-            controls = new PlayerControls();
+            // Create our generated Input System
+            // controls object.
+            controls =
+                new PlayerControls();
         }
 
 
         private void OnEnable()
         {
-            // Enable the Player action map.
+            // -----------------------------
+            // ENABLE PLAYER INPUT
+            // -----------------------------
+
             controls.Player.Enable();
 
 
@@ -82,9 +123,13 @@ namespace EverlastingNihil
             // MOVEMENT
             // -----------------------------
 
+            // Called while movement input
+            // is being performed.
             controls.Player.Move.performed +=
                 HandleMovePerformed;
 
+            // Called when movement input
+            // returns to zero.
             controls.Player.Move.canceled +=
                 HandleMoveCanceled;
 
@@ -93,9 +138,13 @@ namespace EverlastingNihil
             // JUMP
             // -----------------------------
 
+            // "started" happens when the
+            // Jump button is initially pressed.
             controls.Player.Jump.started +=
                 HandleJumpStarted;
 
+            // "canceled" happens when the
+            // Jump button is released.
             controls.Player.Jump.canceled +=
                 HandleJumpCanceled;
 
@@ -221,8 +270,17 @@ namespace EverlastingNihil
                 HandleSeverStarted;
 
 
-            // Disable the Player action map.
+            // Disable the entire Player
+            // action map.
             controls.Player.Disable();
+
+
+            // Reset movement so the Player
+            // doesn't continue moving if this
+            // component gets disabled while
+            // a direction is held.
+            MoveInput =
+                Vector2.zero;
         }
 
         #endregion
@@ -231,27 +289,27 @@ namespace EverlastingNihil
         #region Movement Callbacks
 
         /// <summary>
-        /// Called whenever the movement
-        /// input changes.
+        /// Called whenever movement input changes
+        /// while being performed.
         /// </summary>
         private void HandleMovePerformed(
             InputAction.CallbackContext context
         )
         {
-            // Read the current Vector2 movement input.
+            // Read our Vector2 movement input.
             MoveInput =
                 context.ReadValue<Vector2>();
         }
 
 
         /// <summary>
-        /// Called when movement input is released.
+        /// Called when movement input
+        /// returns to zero.
         /// </summary>
         private void HandleMoveCanceled(
             InputAction.CallbackContext context
         )
         {
-            // Reset movement to zero.
             MoveInput =
                 Vector2.zero;
         }
@@ -261,84 +319,115 @@ namespace EverlastingNihil
 
         #region Jump Callbacks
 
+        /// <summary>
+        /// Called when Jump is pressed.
+        /// </summary>
         private void HandleJumpStarted(
             InputAction.CallbackContext context
         )
         {
-            // Notify PlayerMovement that
-            // jump was pressed.
             JumpPressed?.Invoke();
         }
 
 
+        /// <summary>
+        /// Called when Jump is released.
+        /// </summary>
         private void HandleJumpCanceled(
             InputAction.CallbackContext context
         )
         {
-            // Notify PlayerMovement that
-            // jump was released.
             JumpReleased?.Invoke();
         }
 
         #endregion
 
 
-        #region Combat Callbacks
+        #region Dash Callback
 
+        /// <summary>
+        /// Called when Dash is pressed.
+        /// </summary>
         private void HandleDashStarted(
             InputAction.CallbackContext context
         )
         {
-            // Notify PlayerDash.
             DashPressed?.Invoke();
         }
 
+        #endregion
 
+
+        #region Parry Callback
+
+        /// <summary>
+        /// Called when Parry is pressed.
+        /// </summary>
         private void HandleParryStarted(
             InputAction.CallbackContext context
         )
         {
-            // Notify PlayerParry.
             ParryPressed?.Invoke();
         }
 
+        #endregion
 
+
+        #region Attack Callback
+
+        /// <summary>
+        /// Called when the basic sword
+        /// attack is pressed.
+        /// </summary>
         private void HandleAttackStarted(
             InputAction.CallbackContext context
         )
         {
-            // Notify PlayerAttack.
             AttackPressed?.Invoke();
         }
 
         #endregion
 
 
-        #region Ability Callbacks
+        #region Awaken Callback
 
+        /// <summary>
+        /// Called when Awaken is pressed.
+        /// </summary>
         private void HandleAwakenStarted(
             InputAction.CallbackContext context
         )
         {
-            // Notify PlayerAwaken.
             AwakenPressed?.Invoke();
         }
 
+        #endregion
 
+
+        #region Resonate Callback
+
+        /// <summary>
+        /// Called when Resonate is pressed.
+        /// </summary>
         private void HandleResonateStarted(
             InputAction.CallbackContext context
         )
         {
-            // Notify PlayerResonate.
             ResonatePressed?.Invoke();
         }
 
+        #endregion
 
+
+        #region Sever Callback
+
+        /// <summary>
+        /// Called when Sever is pressed.
+        /// </summary>
         private void HandleSeverStarted(
             InputAction.CallbackContext context
         )
         {
-            // Notify PlayerSever.
             SeverPressed?.Invoke();
         }
 

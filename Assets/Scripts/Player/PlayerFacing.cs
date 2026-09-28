@@ -4,66 +4,58 @@ using UnityEngine;
 namespace EverlastingNihil
 {
     /// <summary>
-    /// Tracks which horizontal direction
-    /// the Player is currently facing.
+    /// Controls which horizontal direction the Player is facing.
     ///
-    /// Other systems such as:
-    /// - PlayerAttack
-    /// - PlayerParry
-    /// - PlayerDash
+    /// This script:
+    /// - Reads horizontal movement input.
+    /// - Flips the Player sprite.
+    /// - Moves the AttackPoint to the correct side.
+    /// - Moves the ParryPoint to the correct side.
+    /// - Provides the current facing direction to other scripts.
     ///
-    /// can use this component instead of
-    /// calculating facing separately.
-    ///
-    /// Facing is checked during FixedUpdate()
-    /// because Player movement already works
-    /// with the physics timestep.
-    ///
-    /// No Update() is required.
+    /// No Update() is used.
     /// </summary>
     [RequireComponent(typeof(PlayerInputHandler))]
     public class PlayerFacing : MonoBehaviour
     {
-        #region Facing Settings
+        #region References
 
-        [Header("Facing Settings")]
+        [Header("References")]
 
-        // Optional SpriteRenderer for the Player.
-        //
-        // If assigned, the sprite will automatically
-        // flip when the Player changes direction.
+        // SpriteRenderer containing the
+        // Player's visible sprite.
         [SerializeField]
         private SpriteRenderer playerSprite;
 
-        // Determines whether this particular sprite
-        // naturally faces right in the artwork.
-        //
-        // Leave this enabled if the sprite's
-        // default direction is right.
-        [SerializeField]
-        private bool spriteFacesRight = true;
-
-        #endregion
-
-
-        #region Facing Points
-
-        [Header("Facing Points")]
-
-        // Attack detection point.
+        // Point used by PlayerAttack.
         [SerializeField]
         private Transform attackPoint;
 
-        // Parry detection point.
+        // Point used by PlayerParry.
         [SerializeField]
         private Transform parryPoint;
 
         #endregion
 
 
+        #region Sprite Settings
+
+        [Header("Sprite Settings")]
+
+        // Turn this ON if the original
+        // Player sprite naturally faces right.
+        //
+        // Turn this OFF if the original
+        // Player sprite naturally faces left.
+        [SerializeField]
+        private bool spriteFacesRight = true;
+
+        #endregion
+
+
         #region Components
 
-        // Provides the current movement input.
+        // Handles our Input System controls.
         private PlayerInputHandler inputHandler;
 
         #endregion
@@ -71,12 +63,17 @@ namespace EverlastingNihil
 
         #region Facing State
 
-        // 1 means right.
-        // -1 means left.
+        // 1 means facing right.
+        // -1 means facing left.
         private int facingDirection = 1;
 
-        // Public access for systems such
-        // as PlayerDash.
+
+        /// <summary>
+        /// Current horizontal facing direction.
+        ///
+        /// 1 = Right
+        /// -1 = Left
+        /// </summary>
         public int FacingDirection
         {
             get
@@ -85,8 +82,11 @@ namespace EverlastingNihil
             }
         }
 
-        // Convenience property for checking
-        // whether the Player faces right.
+
+        /// <summary>
+        /// Returns true when the Player
+        /// is currently facing right.
+        /// </summary>
         public bool IsFacingRight
         {
             get
@@ -95,8 +95,9 @@ namespace EverlastingNihil
             }
         }
 
-        // Fired whenever the Player
-        // actually changes direction.
+
+        // Other systems can listen for
+        // changes in facing direction.
         public event Action<int> FacingChanged;
 
         #endregion
@@ -106,12 +107,12 @@ namespace EverlastingNihil
 
         private void Awake()
         {
-            // Cache our input handler.
+            // Cache our PlayerInputHandler.
             inputHandler =
                 GetComponent<PlayerInputHandler>();
 
 
-            // Apply our starting direction
+            // Apply the starting direction
             // immediately.
             ApplyFacing();
         }
@@ -119,8 +120,7 @@ namespace EverlastingNihil
 
         private void FixedUpdate()
         {
-            // Stop safely if the input
-            // handler wasn't found.
+            // Stop if InputHandler is missing.
             if (inputHandler == null)
                 return;
 
@@ -130,36 +130,43 @@ namespace EverlastingNihil
                 inputHandler.MoveInput.x;
 
 
-            // Facing should NOT change while
-            // the Player isn't moving horizontally.
-            if (Mathf.Abs(horizontalInput) < 0.01f)
+            // Don't change direction if the
+            // Player isn't pressing left/right.
+            if (Mathf.Abs(horizontalInput) <
+                0.01f)
+            {
                 return;
+            }
 
 
-            // Convert movement into either
-            // right (+1) or left (-1).
+            // Determine which direction
+            // the Player wants to face.
             int newDirection =
                 horizontalInput > 0f
                     ? 1
                     : -1;
 
 
-            // Nothing changed.
-            if (newDirection == facingDirection)
+            // Don't do anything if we're
+            // already facing that direction.
+            if (newDirection ==
+                facingDirection)
+            {
                 return;
+            }
 
 
-            // Store the new direction.
+            // Store our new direction.
             facingDirection =
                 newDirection;
 
 
-            // Apply it to our sprite
-            // and detection points.
+            // Update sprite and interaction points.
             ApplyFacing();
 
 
-            // Notify other systems.
+            // Notify any other systems
+            // listening for direction changes.
             FacingChanged?.Invoke(
                 facingDirection
             );
@@ -168,30 +175,32 @@ namespace EverlastingNihil
         #endregion
 
 
-        #region Facing Logic
+        #region Facing
 
         /// <summary>
-        /// Updates everything that visually or
-        /// physically depends on facing direction.
+        /// Applies the current facing direction
+        /// to the Player's visual and action points.
         /// </summary>
         private void ApplyFacing()
         {
             // -----------------------------
-            // PLAYER SPRITE
+            // FLIP PLAYER SPRITE
             // -----------------------------
 
             if (playerSprite != null)
             {
-                // If the artwork naturally faces
-                // right, flip it when facing left.
+                // If the original sprite faces right:
+                //
+                // Facing Right = flipX false
+                // Facing Left  = flipX true
+                //
+                // If the original sprite faces left,
+                // the behavior is reversed.
                 if (spriteFacesRight)
                 {
                     playerSprite.flipX =
                         facingDirection < 0;
                 }
-
-                // If the artwork naturally faces
-                // left, flip it when facing right.
                 else
                 {
                     playerSprite.flipX =
@@ -201,7 +210,7 @@ namespace EverlastingNihil
 
 
             // -----------------------------
-            // ATTACK POINT
+            // FLIP ATTACK POINT
             // -----------------------------
 
             FlipPoint(
@@ -210,7 +219,7 @@ namespace EverlastingNihil
 
 
             // -----------------------------
-            // PARRY POINT
+            // FLIP PARRY POINT
             // -----------------------------
 
             FlipPoint(
@@ -220,35 +229,35 @@ namespace EverlastingNihil
 
 
         /// <summary>
-        /// Places a child detection point
-        /// on the correct side of the Player.
+        /// Moves a child Transform to the
+        /// correct horizontal side of the Player.
         ///
-        /// The absolute X distance is preserved,
-        /// while facingDirection determines
-        /// whether that distance is left or right.
+        /// The point keeps the same distance
+        /// from the Player.
         /// </summary>
         private void FlipPoint(
             Transform point
         )
         {
-            // This point is optional.
+            // Ignore missing points.
             if (point == null)
                 return;
 
 
-            // Read its current local position.
+            // Get the point's current
+            // local position.
             Vector3 position =
                 point.localPosition;
 
 
-            // Preserve the distance from the Player,
+            // Keep its distance from the Player
             // but move it to the correct side.
             position.x =
                 Mathf.Abs(position.x) *
                 facingDirection;
 
 
-            // Apply the new position.
+            // Apply the position.
             point.localPosition =
                 position;
         }
