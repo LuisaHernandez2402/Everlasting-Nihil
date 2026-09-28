@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/Scripts/Combat/Boss.meta
 guid: 9c559087ebbc34eea98c11c0c3b3ac27
 folderAsset: yes
+=======
+guid: af8b3087a0484334fb95e83502b617f6
+>>>>>>> Stashed changes:Assets/Scenes/02_LiminalArbora.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

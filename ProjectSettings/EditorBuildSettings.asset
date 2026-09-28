@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Omnia.unity
     guid: 92e37194433b34c6c9afe11212c3491f
   - enabled: 1
+<<<<<<< Updated upstream
+=======
+    path: Assets/Scenes/01_Omnia.unity
+    guid: 4a11fc03529ff4b28ba64508b5fad81b
+  - enabled: 1
+>>>>>>> Stashed changes
     path: Assets/Scenes/LiminalArbora.unity
     guid: 576b5ebeb79304cc1a7b95aebd4218ea
   m_configObjects:
