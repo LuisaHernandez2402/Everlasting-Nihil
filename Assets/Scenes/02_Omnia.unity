@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc5018d12ff941c8aa40157c6416269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EverlastingNihil.SceneExit
-  destinationScene: 02_LiminalArbora
+  destinationScene: 03_LiminalArbora
   destinationEntranceID: FromOmnia
 --- !u!61 &211712108
 BoxCollider2D:
